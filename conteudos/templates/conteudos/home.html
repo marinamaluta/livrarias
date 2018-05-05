@@ -1,80 +1,8 @@
+{% extends 'conteudos/base.html' %}
 {% load static %}
-<!DOCTYPE html>
 
-<html lang="pt-br">
+{% block content %}
 
-<head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Site para BRK pela Evoluir">
-    <meta name="author" content="Marina Maluta">
-
-    <title>Evoluir - BRK Ambiental</title>
-    <link rel="shortcut icon" href="img/principal_mundo.ico"/>
-
-    <!-- Link CSS (Bootstrap)-->
-    <link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
-
-    <!-- Fontes personalizadas (Google Fontes) -->
-    <link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
-
-
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-
-    <!-- Link CSS -->
-    <link href="{% static 'css/estilo.css' %}" rel="stylesheet">
-</head>
-
-<body id="page-top" class="index">
-
-    <!-- Navegação -->
-    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
-        <div class="container">
-
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Evoluir Ambiental</a>
-            </div>
-
-            <!-- Inicio dos links da navbar -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#cardapios">Combos Didádicos</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#alimentacaoEspecial">Água potável e Saneamento</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#fiquepordentro">Fique por Dentro</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#piramide">ODS</a>
-                    </li>
-                     <li>
-                        <a class="page-scroll" href="#canalContato">Fale Conosco</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#portfolioModal0" data-toggle="modal">EVOLUIR</a>
-                    </li>
-                    <li>
-                       <a class="page-scroll" href="#portfolioModal01" data-toggle="modal"><i class="fa fa-search" aria-hidden="true"></i></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- Final dos links da navbar -->
     <!-- Inicio do Header -->
     <header>
         <div class="container">
@@ -98,21 +26,21 @@
             <div class="row text-center">
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
-                        <img src="{% static 'conteudos/combo_1.jpg' %}" class="img-circle img-responsive" alt="Resultado de imagem para combo1" title="Resultado de imagem para combo1">
+                        <img src="{% static 'img/combo_1.jpg' %}" class="img-circle img-responsive" alt="Resultado de imagem para combo1" title="Resultado de imagem para combo1">
                     </span>
                     <h4 class="service-heading">Combo1</h4>
                     <p class="text-muted"><a href="#" class="a-personalizado">Materiais pedagógicos para Comunidades</a></p>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
-                        <img src="img/combo_2.jpg" class="img-circle img-responsive" alt="Resultado de imagem para combo2" title="Resultado de imagem para combo2">
+                        <img src="{% static 'img/combo_2.jpg' %}" class="img-circle img-responsive" alt="Resultado de imagem para combo2" title="Resultado de imagem para combo2">
                     </span>
                     <h4 class="service-heading">Combo2</h4>
                     <p class="text-muted"><a href="#" class="a-personalizado">Materiais pedagógicos para Escolas</a></p>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
-                        <img src="img/combo_3.jpg" class="img-circle img-responsive" alt="Resultado de imagem para combo3" title="Resultado de imagem para combo3">
+                        <img src="{% static 'img/combo_3.jpg' %}" class="img-circle img-responsive" alt="Resultado de imagem para combo3" title="Resultado de imagem para combo3">
                     </span>
                     <h4 class="service-heading">Combo3</h4>
                     <p class="text-muted"><a href="#" class="a-personalizado">Materiais pedagógicos para Agentes Comunitários de Saúde</a></p>
@@ -128,96 +56,32 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 id="alimentacaoEspecial" class="section-heading">Acesso, proteção e uso racional da água</h2>
-                    <h3 class="section-subheading text-muted">Como assegurar a disponibilidade e gestão sustentável da água e saneamento para todas e todos através de conteúdos sobre o tema? Explore através dos tópicos abaixo:</h3>
+                    <h2 id="alimentacaoEspecial" class="section-heading">xxxxxxx</h2>
+                    <h3 class="section-subheading text-muted">xxxx xxxxx  x x xxxx</h3>
                 </div>
             </div>
+
+
             <div class="row">
+            {% for t in temas %}
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                    <a href="{% url 'tema-list' t.id %}" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/modal_1.jpg" class="img-responsive padrao" alt="Resultado de imagem para modal1" title="Resultado de imagem para modal1">
+                        <img src="{% static 'img/modal_1.jpg' %}" class="img-responsive padrao" alt="Resultado de imagem para modal1" title="Resultado de imagem para modal1">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Acesso, proteção e uso racional da água</h4>
+                        <h4>{{t.tema}}</h4>
                         <p class="text-muted a-personalizado">Acesse os materiais disponiveis clicando na foto</p>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/modal_2.jpg" class="img-responsive padrao" alt="Resultado de imagem para modal2" title="Resultado de imagem para modal2">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Higiene, Saúde e Saneamento</h4>
-                        <p class="text-muted a-personalizado">Acesse os materiais disponiveis clicando na foto</a></p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/modal_3.jpg" class="img-responsive padrao" alt="Resultado de imagem para modal3" title="Resultado de imagem para modal3">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Redes, participação e cidadania</h4>
-                        <p class="text-muted a-personalizado">Acesse os materiais disponiveis clicando na foto</a></p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/modal_4.jpg" class="img-responsive padrao" alt="Resultado de imagem para modal4" title="Resultado de imagem para modal4">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Mundo do trabalho</h4>
-                        <p class="text-muted a-personalizado">Acesse os materiais disponiveis clicando na foto</a></p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/modal_5.jpg" class="img-responsive padrao" alt="Resultado de imagem para modal5" title="Resultado de imagem para modal5">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Objetivos de Desenvolvimento Sustentável - ODS</h4>
-                        <p class="text-muted a-personalizado">Acesse os materiais disponiveis clicando na foto</a></p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/modal_6.jpg" class="img-responsive padrao" alt="Resultado de imagem para modal6" title="Resultado de imagem para modal6">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Objetivos de Desenvolvimento Sustentável - ODS</h4>
-                        <p class="text-muted a-personalizado">Acesse os materiais disponiveis clicando na foto</a></p>
-                    </div>
-                </div>
+                {% empty %}
+                {% endfor %}
             </div>
+
         </div>
     </section>
     <!-- Final da section Portifólio-->
@@ -232,7 +96,7 @@
                 </div>
             </div>
                 <div id="piramide" class="col-lg-12 text-center">
-                <center><img class="img-responsive" style="width:500px; display: flex; justify-content: center;" src="img/ODS.jpg" alt="Resultado de imagem para ODS" title="Resultado de imagem para ODS">
+                <center><img class="img-responsive" style="width:500px; display: flex; justify-content: center;" src="{% static 'img/ODS.jpg' %}" alt="Resultado de imagem para ODS" title="Resultado de imagem para ODS">
                     </center>
                 </div>
             </div>
@@ -245,51 +109,7 @@
         </div>
     </section>
     <!-- Final da section Team-->
-    <!-- Início da section Contact-->
-    <section id="contact">
-        <div id="canalContato" class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">A sua opinião é muito valiosa!</h2>
-                    <h3 class="section-subheading-contato text-muted">Este canal foi criado para você ter a voz ouvida!<br>Participe dando sugestões e assim garantir a manutenção da qualidade e segurança da alimentação escolar do seu filho(a)!</br></h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <form name="sentMessage" id="contactForm" novalidate>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group nao-toquei">
-                                    <input type="text" class="form-control" placeholder="Nome *" id="name" required data-validation-required-message="Por favor, escreva sem nome.">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <div class="form-group nao-toquei">
-                                    <input type="email" class="form-control" placeholder="E-mail *" id="email" required data-validation-required-message="Por favor, escreva seu e-mail.">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <div class="form-group nao-toquei">
-                                    <input type="tel" class="form-control" placeholder="Telefone de contato" id="phone" required data-validation-required-message="Please enter your phone number.">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group nao-toquei">
-                                    <textarea class="form-control" placeholder="Sua participação é muito importante para nós! *" id="message" rows="10" cols="40" maxlength="150"  data-contador-fonte required data-validation-required-message="Por favor, digite sua mensagem"></textarea>
-                                    <span data-contador-destino>150</span>
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <div class="clearfix"></div>
-                            <div class="col-lg-12 text-center">
-                                <div id="success"></div>
-                                <button type="submit" class="btn btn-xl">Envie sua mensagem</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
+
     <footer>
         <div class="container">
             <div class="row">
@@ -400,7 +220,7 @@
 
                                 <h2>Água potável e Saneamento Básico</h2>
                                 <p class="item-intro text-muted">6.1 até 2030, alcançar o acesso universal e equitativo à água potável, segura e acessível para todos </p>
-                                <img class="img-responsive img-centered" src="img/modal_interno_1.jpg" alt="Resultado de imagem para alergia alimentar" title="Resultado de imagem para alergia alimentar">
+                                <img class="img-responsive img-centered" src="{% static 'img/modal_interno_1.jpg' %}" alt="Resultado de imagem para alergia alimentar" title="Resultado de imagem para alergia alimentar">
                                 <p> O que já vem sendo feito: </br>
 
                                     Em 1997, foi sancionada a Lei das Águas (Lei nº 9.433), que estabeleceu a Política Nacional de Recursos Hídricos (PNRH) e criou o Sistema Nacional de Gerenciamento de Recursos Hídricos (Singreh).</br>
@@ -586,6 +406,7 @@
         </div>
     </div>
     <!-- Final do Portfolio Modal 5 -->
+
     <!-- Início do Portfolio Modal 6 -->
     <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
@@ -633,18 +454,5 @@
         </div>
     </div>
     <!-- Final do Portfolio Modal 6 -->
-    <!-- Link jQuery Bootstrap-->
-    <script src="{% static 'bootstrap/js/jquery.min.js' %}"></script>
 
-    <!-- Link JavaScript Bootstrap-->
-    <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
-
-    <!-- Plugin JavaScript Bootstrap-->
-    <script src="{% static 'bootstrap/js/jquery.easing.min.js' %}"></script>
-
-    <!-- Link JavaScript -->
-    <script src="{% static 'js/script.js' %}"></script>
-
-</body>
-
-</html>
+{% endblock %}
