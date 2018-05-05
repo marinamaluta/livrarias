@@ -1,0 +1,97 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Site para BRK pela Evoluir">
+    <meta name="author" content="Marina Maluta">
+
+    <title>Evoluir - BRK Ambiental</title>
+    <link rel="shortcut icon" href="img/principal_mundo.ico"/>
+
+    <!-- Link CSS (Bootstrap)-->
+    <link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Fontes personalizadas (Google Fontes) -->
+    <link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Link CSS -->
+    <link href="{% static 'css/estilo.css' %}" rel="stylesheet">
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navegação -->
+    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container">
+
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Evoluir Ambiental</a>
+            </div>
+
+            <!-- Inicio dos links da navbar -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#cardapios">Combos Didádicos</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#alimentacaoEspecial">Água potável e Saneamento</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#fiquepordentro">Fique por Dentro</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#piramide">ODS</a>
+                    </li>
+                     <li>
+                        <a class="page-scroll" href="#canalContato">Fale Conosco</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolioModal0" data-toggle="modal">EVOLUIR</a>
+                    </li>
+                    <li>
+                       <a class="page-scroll" href="#portfolioModal01" data-toggle="modal"><i class="fa fa-search" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Final dos links da navbar -->
+
+
+      {% block content %}{% endblock content %}
+
+
+    <!-- Link jQuery Bootstrap-->
+    <script src="{% static 'bootstrap/js/jquery.min.js' %}"></script>
+
+    <!-- Link JavaScript Bootstrap-->
+    <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+
+    <!-- Plugin JavaScript Bootstrap-->
+    <script src="{% static 'bootstrap/js/jquery.easing.min.js' %}"></script>
+
+    <!-- Link JavaScript -->
+    <script src="{% static 'js/script.js' %}"></script>
+
+</body>
+
+</html>
