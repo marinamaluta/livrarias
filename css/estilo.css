@@ -164,7 +164,7 @@ fieldset[disabled] .btn-xl.active {
   color: #fec503;
 }
 .navbar-custom .navbar-collapse {
-  border-color: rgba(255, 255, 255, 0.02);
+  border-color:#249a10;
 }
 .navbar-custom .navbar-toggle {
   background-color: #fed136;
@@ -193,12 +193,12 @@ fieldset[disabled] .btn-xl.active {
 }
 .navbar-custom .navbar-nav > .active > a {
   border-radius: 0;
-  color: #403c23;
+  color: #249a10;
   background-color: #fed136;
 }
 .navbar-custom .navbar-nav > .active > a:hover,
 .navbar-custom .navbar-nav > .active > a:focus {
-  color: #403c23;
+  color: #249a10;
   background-color: #fec503;
 }
 
@@ -243,7 +243,7 @@ img.padrao{
 }
 @media (min-width: 768px) {
   .navbar-custom.affix {
-    background-color: #222222;
+    background-color: #249a10;
     padding: 10px 0;
   }
   .navbar-custom.affix .navbar-brand {
@@ -251,7 +251,7 @@ img.padrao{
   }
 }
 header {
-  background-image: url('../img/carousel-3.jpg');
+  background-image: url('../img/principal_crianca.jpg');
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -363,7 +363,7 @@ section h3.section-subheading-contato{
   margin: 0 auto;
 }
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
-  background: rgba(254, 209, 54, 0.9);
+  background: #249a10;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -402,6 +402,7 @@ section h3.section-subheading-contato{
 #portfolio .portfolio-item .portfolio-caption h4 {
   text-transform: none;
   margin: 0;
+  font-size: 14px;
 }
 #portfolio .portfolio-item .portfolio-caption p {
   font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -694,7 +695,7 @@ ul.social-buttons li a {
 ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
-  background-color: #fed136;
+  background-color: #403c23;
 }
 .btn:focus,
 .btn:active,
@@ -778,11 +779,11 @@ ul.social-buttons li a:active {
 }
 ::-moz-selection {
   text-shadow: none;
-  background: #fed136;
+  background: #403c23;
 }
 ::selection {
   text-shadow: none;
-  background: #fed136;
+  background: #403c23;
 }
 img::selection {
   background: transparent;
@@ -791,7 +792,7 @@ img::-moz-selection {
   background: transparent;
 }
 body {
-  webkit-tap-highlight-color: #fed136;
+  webkit-tap-highlight-color: #403c23;
 }
 
 /* Final do estilo modal */
@@ -807,7 +808,7 @@ body {
 /* valido */
 .form-group input:valid,
 .form-group textarea:valid {
-  border: 2px solid green;
+  border: 2px solid #403c23;
 }
 
 /* invalido */
