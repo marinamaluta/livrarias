@@ -25,7 +25,7 @@ SECRET_KEY = 'qwy$jff*vp_)3@fr5o+@d8$u@z3-x7v(wnlk=*tbnsikp!1h%o'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['192.168.0.106']
 
 
 # Application definition
@@ -55,7 +55,9 @@ ROOT_URLCONF = 'brk.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            os.path.join(BASE_DIR, 'templates'),
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -120,5 +122,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = ''
-STATICFILES_DIRS = (os.path.join('static'), )
+STATICFILES_DIRS = (os.path.join('static'),
+                    os.path.join('conteudos'),)
 
