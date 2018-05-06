@@ -40,8 +40,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
+  font-family: "Lato",Arial,Helvetica,sans-serif, "Montserrat", "Helvetica Neue";
   font-weight: 700;
 }
 .img-centered {
@@ -312,7 +311,7 @@ header .intro-text .intro-heading {
   }
 }
 section {
-  padding: 100px 0;
+  padding: 100px 0 0 0;
 }
 section h2.section-heading {
   font-size: 40px;
@@ -345,7 +344,7 @@ section h3.section-subheading-contato{
 
 @media (min-width: 768px) {
   section {
-    padding: 100px 0;
+    padding: 100px 0 0 0;
   }
 }
 .service-heading {
@@ -363,7 +362,7 @@ section h3.section-subheading-contato{
   margin: 0 auto;
 }
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
-  background: #249a10;
+  background: #f2f2f2;
   position: absolute;
   width: 100%;
   height: 100%;

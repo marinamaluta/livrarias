@@ -47,7 +47,8 @@ class OBJETIVOS(models.Model):
 
 
 class TEMA(models.Model):
-    tema = models.CharField(max_length=250, verbose_name='Objetivo')
+    tema = models.CharField(max_length=250, verbose_name='Tema')
+    img_tema = models.CharField(max_length=25, verbose_name='Nome da Img Tema')
 
     def __str__(self):
         return str(self.tema)
@@ -77,7 +78,7 @@ class Material(models.Model):
         return str(self.titulo)
 
     def h(self, tag):
-        code = '<span class="badge badge-primary" style="background-color:yellow; color: black;">%s</span>' % (tag)
+        code = '<span class="badge badge-primary" style="background-color:#0000FF; color: white;">%s</span>' % (tag)
         return code
 
     def tags(self):

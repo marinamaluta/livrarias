@@ -14,49 +14,13 @@
         </div>
     </header>
 
-    <!-- Inicio da section Serviço -->
-    <section id="services">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 id="cardapios" class="section-heading">O que você encontra por aqui?</h2>
-                    <h3 class="section-subheading text-muted">Materiais didáticos para sensibilizar e conscientizar sobre todo o ecossistema ambiental. </br></h3>
-                </div>
-            </div>
-            <div class="row text-center">
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <img src="{% static 'img/combo_1.jpg' %}" class="img-circle img-responsive" alt="Resultado de imagem para combo1" title="Resultado de imagem para combo1">
-                    </span>
-                    <h4 class="service-heading">Combo1</h4>
-                    <p class="text-muted"><a href="#" class="a-personalizado">Materiais pedagógicos para Comunidades</a></p>
-                </div>
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <img src="{% static 'img/combo_2.jpg' %}" class="img-circle img-responsive" alt="Resultado de imagem para combo2" title="Resultado de imagem para combo2">
-                    </span>
-                    <h4 class="service-heading">Combo2</h4>
-                    <p class="text-muted"><a href="#" class="a-personalizado">Materiais pedagógicos para Escolas</a></p>
-                </div>
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <img src="{% static 'img/combo_3.jpg' %}" class="img-circle img-responsive" alt="Resultado de imagem para combo3" title="Resultado de imagem para combo3">
-                    </span>
-                    <h4 class="service-heading">Combo3</h4>
-                    <p class="text-muted"><a href="#" class="a-personalizado">Materiais pedagógicos para Agentes Comunitários de Saúde</a></p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Final da section Serviço -->
 
     <!-- Inicio da section Portifólio-->
     <section id="portfolio" class="bg-light-gray">
-        <div class="container">
+        <div class="container" id="materiais">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 id="alimentacaoEspecial" class="section-heading">xxxxxxx</h2>
+                    <h2 class="section-heading">Acervo de Materiais sobre Educação Socioambiental</h2>
                     <h3 class="section-subheading text-muted">xxxx xxxxx  x x xxxx</h3>
                 </div>
             </div>
@@ -71,7 +35,7 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="{% static 'img/modal_1.jpg' %}" class="img-responsive padrao" alt="Resultado de imagem para modal1" title="Resultado de imagem para modal1">
+                        <img src="/static/img/{{ t.img_tema }}" class="img-responsive padrao" alt="Resultado de imagem para modal" title="Resultado de imagem para modal">
                     </a>
                     <div class="portfolio-caption">
                         <h4>{{t.tema}}</h4>
@@ -86,20 +50,57 @@
     </section>
     <!-- Final da section Portifólio-->
 
+     <!-- Inicio da section Serviço -->
+     <section id="services">
+        <div class="container" id="combos">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">O que você encontra por aqui?</h2>
+                    <h3 class="section-subheading text-muted">Materiais didáticos para sensibilizar e conscientizar sobre todo o ecossistema ambiental. </br></h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <img src="{% static 'img/combo_1.jpg' %}" class="img-circle img-responsive" alt="Resultado de imagem para combo1" title="Resultado de imagem para combo1">
+                    </span>
+                    <h4 class="service-heading">Kit #1</h4>
+                    <p class="text-muted"><a href="#" class="a-personalizado">Materiais pedagógicos para Comunidades</a></p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <img src="{% static 'img/combo_2.jpg' %}" class="img-circle img-responsive" alt="Resultado de imagem para combo2" title="Resultado de imagem para combo2">
+                    </span>
+                    <h4 class="service-heading">Kit #2</h4>
+                    <p class="text-muted"><a href="#" class="a-personalizado">Materiais pedagógicos para Escolas</a></p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <img src="{% static 'img/combo_3.jpg' %}" class="img-circle img-responsive" alt="Resultado de imagem para combo3" title="Resultado de imagem para combo3">
+                    </span>
+                    <h4 class="service-heading">Kit #3</h4>
+                    <p class="text-muted"><a href="#" class="a-personalizado">Materiais pedagógicos para Agentes Comunitários de Saúde</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final da section Serviço -->
+
     <!-- Início da section Team-->
     <section id="team" class="bg-light-gray">
-        <div class="container">
+        <div class="container" id="ODS" >
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Você sabe o que é ODS?</h2>
-                    <h3 class="section-subheading text-muted">Os Objetivos de Desenvolvimento Sustentável (ODS) são uma agenda mundial adotada durante a Cúpula das Nações Unidas sobre o Desenvolvimento Sustentável em setembro de 2015 composta por 17 objetivos e 169 metas a serem atingidos até 2030. Quer saber mais?</h3>
+                    <h3 class="section-subheading text-muted">Os Objetivos de Desenvolvimento Sustentável (ODS) são uma agenda mundial adotada durante a Cúpula das Nações Unidas sobre o Desenvolvimento Sustentável em setembro de 2015 composta por 17 objetivos e 169 metas a serem atingidos até 2030. Quer saber mais?</h3> 
                 </div>
-            </div>
-                <div id="piramide" class="col-lg-12 text-center">
-                <center><img class="img-responsive" style="width:500px; display: flex; justify-content: center;" src="{% static 'img/ODS.jpg' %}" alt="Resultado de imagem para ODS" title="Resultado de imagem para ODS">
+            </div> 
+                <div class="col-lg-12 text-center">
+                <center><img class="img-responsive" style="width:500px; display: flex; justify-content: center;" src="{% static 'img/ods.jpg' %}" alt="Resultado de imagem para ODS" title="Resultado de imagem para ODS">
                     </center>
                 </div>
-            </div>
+            </div> </br></br>
 
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
@@ -203,58 +204,6 @@
     </div>
     <!-- Final do Portfolio Modal 01 -->
 
-    <!-- Inicio do Portfolio Modal 1 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-
-                                <h2>Água potável e Saneamento Básico</h2>
-                                <p class="item-intro text-muted">6.1 até 2030, alcançar o acesso universal e equitativo à água potável, segura e acessível para todos </p>
-                                <img class="img-responsive img-centered" src="{% static 'img/modal_interno_1.jpg' %}" alt="Resultado de imagem para alergia alimentar" title="Resultado de imagem para alergia alimentar">
-                                <p> O que já vem sendo feito: </br>
-
-                                    Em 1997, foi sancionada a Lei das Águas (Lei nº 9.433), que estabeleceu a Política Nacional de Recursos Hídricos (PNRH) e criou o Sistema Nacional de Gerenciamento de Recursos Hídricos (Singreh).</br>
-
-                                    Nesse contexto, a Secretaria Nacional de Saneamento Ambiental, órgão do Ministério das Cidades, é um dos responsáveis pela política pública de água e saneamento no nível federal.</br>
-
-                                    A secretaria repassa recursos a municípios com população superior a 50 mil habitantes ou integrantes de Regiões Metropolitanas, Regiões Integradas de Desenvolvimento ou participantes de Consórcios Públicos afins. Para os municípios de menor porte, com população inferior a 50 mil habitantes, repasses para saneamento são realizados pela Fundação Nacional de Saúde (Funasa). Uma condição para os repasses é que os municípios tenham Planos de Saneamento Básico.</br>
-
-                                    A temática da água e do saneamento é transversal, isto é, tem impactos em diferentes setores da vida, como a saúde, a qualidade ambiental, a economia. Por isso, diferentes órgãos em distintos níveis federativos trabalham a questão. Promover a melhor sintonia entre eles é um desafio institucional, uma vez que as abordagens nem sempre são no mesmo sentido ou tom.</br>
-
-                                    Os Comitês de Bacia Hidrográfica, existentes no Brasil desde 1988, também estão relacionados às metas deste ODS, e fazem parte do Sistema Nacional de Gerenciamento de Recursos Hídricos. Suas principais competências são: aprovar o Plano de Recursos Hídricos da Bacia; arbitrar conflitos pelo uso da água; estabelecer mecanismos e sugerir os valores da cobrança pelo uso da água.
-
-                                     </p>
-                                <p>
-                                    <strong>Você quer material para a sua escola?</strong> </br>
-                                    Acesse: Livros <a href="https://pt.wikipedia.org/wiki/Alergia_alimentar"> link</a></p>
-                                    Acesse: Projetos Educacionais <a href="https://pt.wikipedia.org/wiki/Alergia_alimentar"> link</a></p>
-                                    Acesse: Jogos <a href="https://pt.wikipedia.org/wiki/Alergia_alimentar"> link</a></p>
-                                    Acesse: Vídeos <a href="https://pt.wikipedia.org/wiki/Alergia_alimentar"> link</a></p>
-                                    Acesse: Apps <a href="https://pt.wikipedia.org/wiki/Alergia_alimentar"> link</a></p>
-                                <ul class="list-inline">
-                                    <li><strong>Assunto:</strong> ODS6</li>
-                                    <li><strong>Tema:</strong> Água potável e Saneamento Básico</li> </br>
-                                    <li><strong>Categoria:</strong> Necessidades Alimentares Especiais</li>
-                                </ul>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Voltar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Final do Portfolio Modal 1 -->
     <!-- Inicio do Portfolio Modal 2 -->
     <!--<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
@@ -292,167 +241,5 @@
         </div>
     </div>-->
     <!-- Final do Portfolio Modal 2 -->
-    <!-- Início do Portfolio Modal 3 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-
-                                <h2>Diabetes Melittus - DM</h2>
-                                <p class="item-intro text-muted">A DM tem uma importante relação com estilo de vida. Hábitos saudáveis se constituem em fatores de proteção. As unidades escolares têm um papel fundamental na promoção de hábitos alimentares e estilos de vida saudáveis. Estudantes com DM devem ser estimulados a participar das atividades fisicamente ativas, tanto na aula de educação física como em atividades optativas, como as do Programa Mais Educação e as do Escola Aberta. Esse envolvimento pode demandar maior vínculo entre mães, pais ou responsáveis pelos estudantes e a escola, por questões diversas à alimentação escolar, mas que podem ser apoiadas pela área técnica</p>
-                                <img class="img-responsive img-centered" src="img/diabetes-2.jpg" alt="Resultado de imagem para Diabetes Mellitus" title="Resultado de imagem para Diabetes Mellitus">
-                                <p>Diabetes Mellitus-DM</a></p>
-                                <p>Deve-se orientar a escola em relação aos casos de hiper e hipoglicemia. Convém dispor de alimentos fontes de açúcares simples para o socorro no caso de hipoglicemia. Os educadores devem evitar deixar o estudante sozinho e ter atenção com mudanças do comportamento do estudante. Se necessário, solicitar ao estudante que monitore a glicemia o mais rápido possível.</p>
-
-
-                                 <strong>Quer saber mais?</strong> Acesse:<a href="https://pt.wikipedia.org/wiki/Diabetes_mellitus"> link</a></p>
-                                <ul class="list-inline">
-                                    <li>Assunto: Diabetes Melittus- DM</li>
-                                    <li>Tema: Alimentação Escolar</li>
-                                    <li>Categoria: Necessidades Alimentares Especiais</li>
-                                </ul>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Voltar para página principal</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Final do Portfolio Modal 3 -->
-    <!-- Início do Portfolio Modal 4 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-
-                               <h2>Dislipidemias e Hipertensão</h2>
-                                <p class="item-intro text-muted">As DCNT têm uma relação importante com o estilo de vida. Hábitos saudáveis se constituem em fatores de proteção, enquanto que comportamentos como hábitos alimentares não saudáveis, inatividade física, abuso de álcool e tabagismo estão ligados ao seu desenvolvimento. Nesse sentido, as unidades escolares têm um papel fundamental na promoção de hábitos alimentares e estilos de vida saudáveis. É necessário recomendar aos gestores escolares e educadores atenção no sentido de desenvolver atividades pedagógicas que abordem e promovam esses temas de maneira transversal no currículo escolar, em horário regular e extraclasse, inclusive em escolas aderidas ao Programa Mais Educação e ao Escola Aberta, enfocando as recomendações do Guia Alimentar para a População Brasileira4. Alunos com DCNT devem ser estimulados a participar das atividades fisicamente ativas, tanto nas aulas de educação física, quanto nesses dois programas. Recomenda-se, ainda, promover a implantação de hortas escolares, que podem contribuir com a disponibilidade permanente de temperos e constituir-se instrumento pedagógico de educação alimentar e nutricional.</p>
-                                <img class="img-responsive img-centered" src="img/dislipidemia-hipertensao-2.jpg" alt="Resultado de imagem para Dislipidemia e Hipertensão" title="Resultado de imagem para Dislipidemia e Hipertensão">
-                                <p>Dislipidemia e Hipertensão</a></p>
-
-
-                                 <strong>Quer saber mais?</strong> Acesse:<a href="https://pt.wikipedia.org/wiki/Dislipidemia"> link-dislipidemia</a> Acesse:<a href="https://pt.wikipedia.org/wiki/Hipertens%C3%A3o_arterial"> link-hipertensão</a>
-                                 </p>
-                                <ul class="list-inline">
-                                    <li>Assunto: Dislipidemia e Hipertensão</li>
-                                    <li>Tema:Alimentação Escolar</li>
-                                    <li>Categoria: Necessidades Alimentares Especiais</li>
-                                </ul>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Voltar para página principal</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Final do Portfolio Modal 4 -->
-    <!-- Início do Portfolio Modal 5 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-
-                                 <h2>Intolerância a Lactose</h2>
-                                <p class="item-intro text-muted">Sabe-se que é preconizada dietoterapia com a oferta de uma quantidade reduzida e fracionada de lactose para algumas situações ou durante algumas fases do tratamento da IL, desde que o paciente não apresente sintomas, pois a exclusão total de lactose pode dificultar a ingestão de fontes de outros nutrientes e tornar a IL mais crônica ou até irreversível, além do seu impacto social. No sentido de padronizar cardápios especiais da alimentação escolar, entretanto, optou-se por recomendar a restrição total de lactose. Alunos que tiverem prescrição de dieta com quantidade reduzida de lactose terão maior flexibilidade, então, para consumir alimentos com lactose nas refeições privadas e com a família. Nesse contexto, a contrarreferência ao prescritor e/ou a referência para nutricionista da rede de saúde são consideradas fundamentais.</p>
-                                <img class="img-responsive img-centered" src="img/intolerancia-lactose-2.jpg" alt="Resultado de imagem para Intolerância a Lactose" title="Resultado de imagem para Intorlerância a Lactose">
-                                <p>Intolerância à Lactose</a></p>
-                                <p class="item-intro text-muted">
-                                O critério recomendado para a elaboração do cardápio especial para IL na alimentação escolar é a exclusão de alimentos fonte de lactose. Cardápios especiais com quantidade reduzida e controlada de lactose podem ser planejados, quando assim prescrito, exigindo maior atenção e treinamento para sua produção, porcionamento e distribuição. Não estão estabelecidas modificações em termos de necessidades energéticas e de macro e micronutrientes, devendo-se garantir o aporte nutricional conforme normativa do PNAE, com atenção para a oferta de cálcio. Fórmulas infantis, vegetais de folha verde (brócolis, couves, acelgas, alfaces) e produtos do mar (principalmente sardinhas em conserva, atum e salmão) podem contribuir com o aporte de cálcio
-                                </p>
-
-
-                                 <strong>Quer saber mais?</strong> Acesse:<a href="https://pt.wikipedia.org/wiki/Dislipidemia"> link</a>
-                                 </p>
-                                <ul class="list-inline">
-                                    <li>Assunto: Intolerância à Lactose - IL</li>
-                                    <li>Tema:Alimentação Escolar</li>
-                                    <li>Categoria: Necessidades Alimentares Especiais</li>
-                                </ul>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Voltar para página principal</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Final do Portfolio Modal 5 -->
-
-    <!-- Início do Portfolio Modal 6 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-
-                                <h2>Indígenas e Quilombolas</h2>
-                                <p class="item-intro text-muted">O Programa Nacional de Alimentação Escolar (Pnae) prevê que o cardápio das escolas “deve respeitar as referências nutricionais, os hábitos alimentares, a cultura alimentar da localidade”. Também destaca que deve “atender as especificidades culturais das comunidades indígenas e/ou quilombolas”.
-
-                                De acordo com um levantamento feito pelo Fundo Nacional de Desenvolvimento da Educação (FNDE) em 2013, o Pnae atendia a mais de 237 mil alunos em escolas indígenas em todo o país. A região Norte tem o maior número de escolas indígenas, com mais de mil e oitocentas. De todo o Brasil, o estado do Amazonas tem mais de 58 mil alunos matriculados em mais de 940 escolas indígenas.
-
-                                O programa atende todos os alunos matriculados na educação básica das redes públicas federal, estadual, distrital e municipal, inclusive as escolas localizadas em áreas indígenas. Além disso, determina que 30% do orçamento seja destinado a aquisição de alimentos diversificados, produzidos preferencialmente pela agricultura familiar e pelos empreendedores familiares rurais, priorizando as comunidades tradicionais indígenas e de remanescentes de quilombos. O estímulo a compra de alimentos regionais é uma forma de respeitar e resgatar os hábitos alimentares desses povos.</p>
-                                <img class="img-responsive img-centered" src="img/indigenas-quilombolas-2.png" alt ="Resultado de imagem para Indigenas e Quilombolas" title="Resultado de imagem para Indígenas e Quilombolas">
-
-
-
-                                <p>Indígenas e Quilombolas</a></p>
-                                <p class="item-intro text-muted">
-                                Mas como saber quais alimentos devem ser comprados para as escolas indígenas? Nesse caso, o Pnae conta com a participação da sociedade civil no Conselho de Alimentação Escolar como instrumento de controle social. Nos estados e municípios que possuem alunos matriculados em áreas indígenas ou quilombolas, é recomendado que pelo menos um dos representantes seja desses povos ou comunidades tradicionais.
-                                </p>
-
-
-                                 <strong>Quer saber mais?</strong> Acesse:<a href="http://www4.planalto.gov.br/consea/comunicacao/noticias/2017/escola-deve-respeitar-cultura-alimentar-indigena"> link</a>
-                                 </p>
-                                <ul class="list-inline">
-                                    <li>Assunto: Indígenas e Quilombolas</li>
-                                    <li>Tema:Alimentação Escolar</li>
-                                    <li>Categoria: Necessidades Alimentares Especiais</li>
-                                </ul>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Voltar para página principal</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Final do Portfolio Modal 6 -->
-
+    
 {% endblock %}

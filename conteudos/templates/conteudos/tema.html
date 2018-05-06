@@ -1,49 +1,39 @@
-{% extends 'conteudos/base.html' %}
-{% load static %}
+{% extends 'conteudos/base.html' %} {% load static %} {% block content %}
 
-{% block content %}
-<br>
-<br>
-<br>
 
- <!-- Inicio da section Serviço -->
-    <section id="services">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 id="cardapios" class="section-heading">{{ tema }}</h2>
-                    <h3 class="section-subheading text-muted">Materiais didáticos para sensibilizar e conscientizar sobre todo o ecossistema ambiental. </br></h3>
+<!-- Inicio da section Serviço -->
+<section id="services">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">{{ tema }}</h2>
+                <h3 class="section-subheading text-muted">Materiais didáticos para sensibilizar e conscientizar sobre todo o ecossistema ambiental. </h3>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container">
+    <div class="row">
+        {% for k, v in tipo.items %}
+        <div class="col-md-6">
+            <div class="card text-center">
+                <div class="card-header"></div>
+                <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                    <div class="my-3 p-3">
+                        <h2 class="display-5"> {{ k }}</h2>
+                        <p class="lead">xxxxxxxxxxx</p>
+                        <div class="bg-white box-shadow mx-auto center" style="width: 60%; height: 300px; background-color: gray; border-radius: 22px 22px 22px 22px;">
+                        </div>
+                        </br>
+                        <a href="{% url 'tema-tipo' x v %}" class="btn btn-primary">Acesse</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
-        <div class="container">
-            <div class="row">
 
+        {% endfor %}
 
-                {% for k, v in tipo.items %}
-                <div class="col-md-12">
-
-                       <div class="card text-center">
-                      <div class="card-header">
-
-                      </div>
-                      <div class="card-body">
-                        <h2 class="card-title"> {{ k }}</h2>
-                        <p class="card-text"></p>
-                        <a href="{% url 'tema-tipo' x v %}" class="btn btn-primary">Ver</a>
-                      </div>
-                      <div class="card-footer text-muted">
-                      </div>
-                    </div>
-                 </div>
-                {% endfor %}
-
-            </div>
     </div>
-<br>
-<br>
-
-
-
-{% endblock %}
+</div>
+    <br>
+    <br> {% endblock %}
