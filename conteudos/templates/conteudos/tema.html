@@ -15,21 +15,26 @@
 <div class="container">
     <div class="row">
         {% for k, v in tipo.items %}
-        <div class="col-md-6">
+        <div class="col-lg-4 col-md-4 col-xs-6">
             <div class="card text-center">
                 <div class="card-header"></div>
-                <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                <div class="text-center overflow-hidden">
                     <div class="my-3 p-3">
                         <h2 class="display-5"> {{ k }}</h2>
-                        <p class="lead">xxxxxxxxxxx</p>
-                        <div class="bg-white box-shadow mx-auto center" style="width: 60%; height: 300px; background-color: gray; border-radius: 22px 22px 22px 22px;">
+                        <!--<p class="lead">xxxxxxxxxxx</p> -->
+                        <div class="text-center" style="height: 300px; background-color: gray; border-radius: 40px;">
                         </div>
                         </br>
                         <a href="{% url 'tema-tipo' x v %}" class="btn btn-primary">Acesse</a>
+                    
                     </div>
+                </br>
                 </div>
             </div>
         </div>
+
+
+        
 
         {% endfor %}
 

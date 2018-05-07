@@ -30,20 +30,23 @@
                         <div class="card-body">
                               <p class="card-text" align="justify">{{ material.desc }}</p>
                             <p>{{ material.tags }}</p>
-                         </div>
-                        <div class="card-footer">
+                        </div>
+                        <div class="card-footer" style="text-align:center">
                             <a href="{{ material.link }}" class="btn btn-success">Visualizar</a>
                             <a href="{{ material.link_venda }}" class="btn btn-primary">Comprar</a></center>
-                         </div>
+                        </div>
+                    </br>
+                </br>
+                
                     </div>
-                 </div>
+                </div>
+            
                 {% empty %}
                 {% endfor %}
+                
             </div>
-    </div>
-<br>
-<br>
-
+        </div>
+  
 
 
 {% endblock %}

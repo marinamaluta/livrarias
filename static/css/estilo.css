@@ -163,7 +163,7 @@ fieldset[disabled] .btn-xl.active {
   color: #fec503;
 }
 .navbar-custom .navbar-collapse {
-  border-color:#249a10;
+  border-color:#45ADA8;
 }
 .navbar-custom .navbar-toggle {
   background-color: #fed136;
@@ -192,12 +192,12 @@ fieldset[disabled] .btn-xl.active {
 }
 .navbar-custom .navbar-nav > .active > a {
   border-radius: 0;
-  color: #249a10;
+  color: #45ADA8;
   background-color: #fed136;
 }
 .navbar-custom .navbar-nav > .active > a:hover,
 .navbar-custom .navbar-nav > .active > a:focus {
-  color: #249a10;
+  color: #45ADA8;
   background-color: #fec503;
 }
 
@@ -210,7 +210,7 @@ img.padrao{
   border-radius: 50%;
 }
 .a-personalizado {
-  color:#004d1a;
+  color:#45ADA8;
   font-size: 14px;
 }
 
@@ -242,7 +242,7 @@ img.padrao{
 }
 @media (min-width: 768px) {
   .navbar-custom.affix {
-    background-color: #249a10;
+    background-color: #45ADA8;
     padding: 10px 0;
   }
   .navbar-custom.affix .navbar-brand {
