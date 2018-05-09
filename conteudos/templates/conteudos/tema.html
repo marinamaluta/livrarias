@@ -8,6 +8,7 @@
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading">{{ tema }}</h2>
                 <h3 class="section-subheading text-muted">Materiais didáticos para sensibilizar e conscientizar sobre todo o ecossistema ambiental. </h3>
+                <embed src="https://www.youtube.com/embed/F9Bo89m2f6g" allowfullscreen="true" width="425" height="344">
             </div>
         </div>
     </div>
@@ -22,8 +23,9 @@
                     <div class="my-3 p-3">
                         <h2 class="display-5"> {{ k }}</h2>
                         <!--<p class="lead">xxxxxxxxxxx</p> -->
-                        <div class="text-center" style="height: 300px; background-color: #547980; border-radius: 40px;">
-                        </div>
+                        <img class="card-img-top" src="{{material.imagem_capa}}" style="width: 100%;" alt="Card image cap">
+                        <!--<div class="text-center" style="height: 300px; background-color: #547980; border-radius: 40px;">
+                        </div> -->
                         </br>
                         <a href="{% url 'tema-tipo' x v %}" class="btn btn-primary">Acesse</a>
                     

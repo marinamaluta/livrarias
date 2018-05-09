@@ -98,13 +98,14 @@ fieldset[disabled] .btn-primary.active {
   background-color: white;
 }
 .btn-xl {
-  color: #403c23;
-  background-color: #004EA8;
-  border-color: #004EA8;
+  color: white;
+  border-color: white;
+  background-color:  #004EA8;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
+ text-transform: uppercase,
   font-weight: 700;
   border-radius: 3px;
+  font-weight: bold;
   font-size: 18px;
   padding: 20px 40px;
   transition: 0.2s;
@@ -187,18 +188,18 @@ fieldset[disabled] .btn-xl.active {
 }
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
-  color: #004EA8;
+  color: write;
   outline: none;
 }
 .navbar-custom .navbar-nav > .active > a {
   border-radius: 0;
-  color: #45ADA8;
-  background-color: #004EA8;
+  color: write;
+  background-color: #0097CF;
 }
 .navbar-custom .navbar-nav > .active > a:hover,
 .navbar-custom .navbar-nav > .active > a:focus {
-  color: #45ADA8;
-  background-color: #004EA8;
+  color: write;
+  background-color: ##0097CF;
 }
 
 img.padrao{
@@ -210,7 +211,7 @@ img.padrao{
   border-radius: 80%;
 }
 .a-personalizado {
-  color:#45ADA8;
+  color:sblack;
   font-size: 14px;
 }
 
@@ -250,7 +251,7 @@ img.padrao{
   }
 }
 header {
-  background-image: url('../img/principal_crianca.jpg');
+  background-image: url('../img/editora-evoluir-1.jpg');
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -258,7 +259,7 @@ header {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  text-align: center;
+  opacity: 0.9;
   color: white;
  height: 100vh;
 }
@@ -268,12 +269,10 @@ header .intro-text {
 }
 header .intro-text .intro-lead-in {
   font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-style: italic;
-  font-size: 22px;
-  line-height: 22px;
+  font-size: 40px;
+  line-height: 40px;
   margin-bottom: 5px;
-  text-shadow: 1px 1px #fec503;
-  background-color: #fec503;
+  text-shadow: 4px 4px #fec503;
   padding: 20px 0;
 }
 header .intro-text .intro-heading {
@@ -293,11 +292,10 @@ header .intro-text .intro-heading {
   }
   header .intro-text .intro-lead-in {
     font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-style: italic;
-    font-size: 40px;
-    line-height: 40px;
+    font-size: 80px;
+    line-height: 80px;
     margin-bottom: 5px;
-    text-shadow: 1px 1px #fec503;
+    text-shadow: 4px 4px #392779;
 
   }
   header .intro-text .intro-heading {
@@ -307,7 +305,7 @@ header .intro-text .intro-heading {
     font-size: 40px;
     line-height: 55px;
     margin-bottom: 50px;
-    text-shadow: 1px 1px #fec503;
+    text-shadow: 4px 4px #fec503;
   }
 }
 section {
