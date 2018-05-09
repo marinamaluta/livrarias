@@ -149,7 +149,7 @@ fieldset[disabled] .btn-xl.active {
 
 /* Inicio do estilo navbar */
 .navbar-custom {
-  background-color: #222222;
+  background-color: #45ADA8;
   border-color: transparent;
 }
 .navbar-custom .navbar-brand {
@@ -207,7 +207,7 @@ img.padrao{
 }
 .foto-cardapio {
   height:inherit;
-  border-radius: 50%;
+  border-radius: 80%;
 }
 .a-personalizado {
   color:#45ADA8;
