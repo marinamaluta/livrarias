@@ -1,211 +1,295 @@
-{% extends 'conteudos/base.html' %}
-{% load static %}
+{% extends 'conteudos/base.html' %} {% load static %} {% block content %}
 
-{% block content %}
+<!-- Inicio do Header -->
+<header>
+    <div class="container">
+        <div class="intro-text">
+            <div class="intro-lead-in">Conteúdos sobre Educação Socioambiental</div>
+            <div class="intro-heading"></div>
+            <a href="#" class="page-scroll btn btn-xl"></a>
+        </div>
+    </div>
+</header>
 
-    <!-- Inicio do Header -->
-    <header>
-        <div class="container">
-            <div class="intro-text">
-                <div class="intro-lead-in">BRK Educação Socioambiental</div>
-                <div class="intro-heading"></div>
-                <a href="#" class="page-scroll btn btn-xl">Fique por dentro!</a>
+
+<!-- Inicio da section Portifólio-->
+<section id="portfolio" class="bg-light-gray">
+    <div class="container" id="materiais">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Materiais sobre Educação Socioambiental</h2>
+                <h3 class="section-subheading text-muted">Encontre todo o conteudo disponível por tema</h3>
             </div>
         </div>
-    </header>
 
 
-    <!-- Inicio da section Portifólio-->
-    <section id="portfolio" class="bg-light-gray">
-        <div class="container" id="materiais">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Acervo de Materiais sobre Educação Socioambiental</h2>
-                    <h3 class="section-subheading text-muted">xxxx xxxxx  x x xxxx</h3>
-                </div>
-            </div>
-
-
-            <div class="row">
+        <div class="row">
             {% for t in temas %}
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="{% url 'tema-list' t.id %}" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="/static/img/{{ t.img_tema }}" class="img-responsive padrao" alt="Resultado de imagem para modal" title="Resultado de imagem para modal">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>{{t.tema}}</h4>
-                        <p class="text-muted a-personalizado">Acesse os materiais disponiveis clicando na foto</p>
-                    </div>
-                </div>
-                {% empty %}
-                {% endfor %}
-            </div>
-
-        </div>
-    </section>
-    <!-- Final da section Portifólio-->
-
-     <!-- Inicio da section Serviço -->
-     <section id="services">
-        <div class="container" id="combos">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">O que você encontra por aqui?</h2>
-                    <h3 class="section-subheading text-muted">Materiais didáticos para sensibilizar e conscientizar sobre todo o ecossistema ambiental. </br></h3>
-                </div>
-            </div>
-            <div class="row text-center">
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <img src="{% static 'img/combo_1.jpg' %}" class="img-circle img-responsive" alt="Resultado de imagem para combo1" title="Resultado de imagem para combo1">
-                    </span>
-                    <h4 class="service-heading">Kit #1</h4>
-                    <p class="text-muted"><a href="#" class="a-personalizado">Materiais pedagógicos para Comunidades</a></p>
-                </div>
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <img src="{% static 'img/combo_2.jpg' %}" class="img-circle img-responsive" alt="Resultado de imagem para combo2" title="Resultado de imagem para combo2">
-                    </span>
-                    <h4 class="service-heading">Kit #2</h4>
-                    <p class="text-muted"><a href="#" class="a-personalizado">Materiais pedagógicos para Escolas</a></p>
-                </div>
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <img src="{% static 'img/combo_3.jpg' %}" class="img-circle img-responsive" alt="Resultado de imagem para combo3" title="Resultado de imagem para combo3">
-                    </span>
-                    <h4 class="service-heading">Kit #3</h4>
-                    <p class="text-muted"><a href="#" class="a-personalizado">Materiais pedagógicos para Agentes Comunitários de Saúde</a></p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Final da section Serviço -->
-
-    <!-- Início da section Team-->
-    <section id="team" class="bg-light-gray">
-        <div class="container" id="ODS" >
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Você sabe o que é ODS?</h2>
-                    <h3 class="section-subheading text-muted">Os Objetivos de Desenvolvimento Sustentável (ODS) são uma agenda mundial adotada durante a Cúpula das Nações Unidas sobre o Desenvolvimento Sustentável em setembro de 2015 composta por 17 objetivos e 169 metas a serem atingidos até 2030. Quer saber mais?</h3> 
-                </div>
-            </div> 
-                <div class="col-lg-12 text-center">
-                <center><img class="img-responsive" style="width:500px; display: flex; justify-content: center;" src="{% static 'img/ods.jpg' %}" alt="Resultado de imagem para ODS" title="Resultado de imagem para ODS">
-                    </center>
-                </div>
-            </div> </br></br>
-
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <p class="large text-muted">Nesta agenda estão previstas ações mundiais nas áreas de erradicação da pobreza, segurança alimentar, agricultura, saúde, educação, igualdade de gênero, redução das desigualdades, energia, água e saneamento, padrões sustentáveis de produção e de consumo, mudança do clima, cidades sustentáveis, proteção e uso sustentável dos oceanos e dos ecossistemas terrestres, crescimento econômico inclusivo, infraestrutura, industrialização, entre outros. </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Final da section Team-->
-
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <span class="copyright">Copyright Evoluir&copy; <br>Feito com ❤ por Marina </br> </span>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline social-buttons">
-                        <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
-                        </li>
-                        <li><a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline quicklinks">
-                        <li><a href="#">Privacidade</a>
-                        </li>
-                        <li><a href="#">Termos de uso</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- Final da section Contact-->
-    <!-- Inicio do Portfolio Modals -->
-
-     <!-- Inicio do Portfolio Modal 0 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal0" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <a href="{% url 'tema-list' t.id %}" class="portfolio-link" data-toggle="modal">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-plus fa-3x"></i>
                         </div>
                     </div>
+                    <img src="/static/img/{{ t.img_tema }}" class="img-responsive padrao" alt="Resultado de imagem para modal" title="Resultado de imagem para modal">
+                </a>
+                <div class="portfolio-caption">
+                    <h4>{{t.tema}}</h4>
+                    <p class="text-muted a-personalizado">Acesse os materiais disponiveis clicando na foto</p>
                 </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <ul>
+            </div>
+            {% empty %} {% endfor %}
+        </div>
+
+    </div>
+</section>
+<!-- Final da section Portifólio-->
+
+<!-- Inicio da section Serviço -->
+<section style="display:flex">
+
+    <div class="container" id="combos">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Materiais disponíveis</h2>
+                <!--  <h3 class="section-subheading text-muted">Materiais didáticos para sensibilizar e conscientizar sobre todo o ecossistema ambiental. </br>
+                </h3> -->
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <span class="fa-stack fa-4x">
+                    <img src="{% static 'img/combo_1.jpg' %}" class="img-circle img-responsive" alt="Resultado de imagem para combo1" title="Resultado de imagem para combo1">
+                </span>
+                <h4 class="service-heading">Livros <input id="checkBox" type="checkbox"></h4>
+                <!--  <p class="text-muted"><a href="#" class="a-personalizado">Materiais pedagógicos para Comunidades</a></p> -->
+            </div>
+       
+            <div class="col-md-4">
+                <span class="fa-stack fa-4x">
+                    <img src="{% static 'img/combo_2.jpg' %}" class="img-circle img-responsive" alt="Resultado de imagem para combo2" title="Resultado de imagem para combo2">
+                </span>
+                <h4 class="service-heading">Planos pedagógicos <input id="checkBox" type="checkbox"></h4> 
+            </div>
+        
+            <div class="col-md-4">
+                <span class="fa-stack fa-4x">
+                    <img src="{% static 'img/combo_3.jpg' %}" class="img-circle img-responsive" alt="Resultado de imagem para combo3" title="Resultado de imagem para combo3">
+                </span>
+                <h4 class="service-heading">Vídeos <input id="checkBox" type="checkbox"></h4>
+            </div>
+       
+            <div class="col-md-4">
+                <span class="fa-stack fa-4x">
+                    <img src="{% static 'img/combo_1.jpg' %}" class="img-circle img-responsive" alt="Resultado de imagem para combo1" title="Resultado de imagem para combo1">
+                </span>
+                <h4 class="service-heading">Aplicativo <input id="checkBox" type="checkbox"></h4>
+            </div>
+
+            <div class="col-md-4">
+                <span class="fa-stack fa-4x">
+                    <img src="{% static 'img/combo_1.jpg' %}" class="img-circle img-responsive" alt="Resultado de imagem para combo1" title="Resultado de imagem para combo1">
+                </span>
+                <h4 class="service-heading">Oficina de Formação <input id="checkBox" type="checkbox"></h4>
+            </div>
+       
+            <div class="col-md-4">
+                <span class="fa-stack fa-4x">
+                    <img src="{% static 'img/combo_1.jpg' %}" class="img-circle img-responsive" alt="Resultado de imagem para combo1" title="Resultado de imagem para combo1">
+                </span>
+                <h4 class="service-heading">Atividades  <input id="checkBox" type="checkbox"> </h4>
+            </div>
+       
+        </div>
+    </div>
+
+
+    <div class="container" id="combos">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Projetos da Evoluir</h2>
+                <!-- <h3 class="section-subheading text-muted">Materiais didáticos para sensibilizar e conscientizar sobre todo o ecossistema ambiental. </br>
+                </h3> -->
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <span class="fa-stack fa-4x">
+                    <img src="{% static 'img/combo_1.jpg' %}" class="img-circle img-responsive" alt="Resultado de imagem para combo1" title="Resultado de imagem para combo1">
+                </span>
+                <h4 class="service-heading">Produtos <input id="checkBox" type="checkbox"></h4>
+                <!--  <p class="text-muted"><a href="#" class="a-personalizado">Materiais pedagógicos para Comunidades</a></p> -->
+            </div>
+            <div class="col-md-4">
+                <span class="fa-stack fa-4x">
+                    <img src="{% static 'img/combo_2.jpg' %}" class="img-circle img-responsive" alt="Resultado de imagem para combo2" title="Resultado de imagem para combo2">
+                </span>
+                <h4 class="service-heading">Exposições <input id="checkBox" type="checkbox"></h4>
+                <!-- <p class="text-muted"><a href="#" class="a-personalizado">Materiais pedagógicos para Escolas</a></p>-->
+            </div>
+            <div class="col-md-4">
+                <span class="fa-stack fa-4x">
+                    <img src="{% static 'img/combo_3.jpg' %}" class="img-circle img-responsive" alt="Resultado de imagem para combo3" title="Resultado de imagem para combo3">
+                </span>
+                <h4 class="service-heading">Eventos </h4>
+                <!-- <p class="text-muted"><a href="#" class="a-personalizado">Materiais pedagógicos para Agentes Comunitários de Saúde</a></p>-->
+            </div>
+        </div>
+        <input type="search" class="form-control" placeholder="O que você procura?" id="search" required="" data-validation-required-message="O que você procura?"
+          >
+</section>
+
+
+<!-- Final da section Serviço -->
+
+<!-- Início da section Team-->
+<section id="team" class="bg-light-gray">
+    <div class="container" id="ODS">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Você sabe o que é ODS?</h2>
+                <h3 class="section-subheading text-muted">Os Objetivos de Desenvolvimento Sustentável (ODS) são uma agenda mundial adotada durante a Cúpula das Nações
+                    Unidas sobre o Desenvolvimento Sustentável em setembro de 2015 composta por 17 objetivos e 169 metas
+                    a serem atingidos até 2030. Quer saber mais?</h3>
+            </div>
+        </div>
+        <div class="col-lg-12 text-center">
+            <center>
+                <img class="img-responsive" style="width:500px; display: flex; justify-content: center;" src="{% static 'img/ods.jpg' %}"
+                    alt="Resultado de imagem para ODS" title="Resultado de imagem para ODS">
+            </center>
+        </div>
+    </div>
+    </br>
+    </br>
+
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 text-center">
+            <p class="large text-muted">Nesta agenda estão previstas ações mundiais nas áreas de erradicação da pobreza, segurança alimentar, agricultura,
+                saúde, educação, igualdade de gênero, redução das desigualdades, energia, água e saneamento, padrões sustentáveis
+                de produção e de consumo, mudança do clima, cidades sustentáveis, proteção e uso sustentável dos oceanos
+                e dos ecossistemas terrestres, crescimento econômico inclusivo, infraestrutura, industrialização, entre outros.
+            </p>
+        </div>
+    </div>
+    </div>
+</section>
+<!-- Final da section Team-->
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <span class="copyright">Copyright Evoluir&copy;
+                    <br>Feito com ❤ por Marina </br>
+                </span>
+            </div>
+            <div class="col-md-4">
+                <ul class="list-inline social-buttons">
+                    <li>
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/" target="_blank">
+                            <i class="fa fa-youtube" aria-hidden="true"></i>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <ul class="list-inline quicklinks">
+                    <li>
+                        <a href="#">Privacidade</a>
+                    </li>
+                    <li>
+                        <a href="#">Termos de uso</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Final da section Contact-->
+<!-- Inicio do Portfolio Modals -->
+
+<!-- Inicio do Portfolio Modal 0 -->
+<div class="portfolio-modal modal fade" id="portfolioModal0" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <ul>
                                 <h2>Faça seu login</h2>
                                 <div class="form-group nao-toquei">
                                     <input type="text" class="form-control" placeholder="Nome *" id="name" required data-validation-required-message="Por favor, escreva sem nome.">
-                                <p class="help-block text-danger"></p>
+                                    <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group nao-toquei">
                                     <input type="senha" class="form-control" placeholder="Digite sua senha*" id="senha" required data-validation-required-message="Digite sua senha">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <ul>
-                                <strong> <a href="#"> Esqueceu a senha?  </a></strong>
-                                <strong> <a href="#"> Faça seu cadastro  </a></strong>
+                                    <strong>
+                                        <a href="#"> Esqueceu a senha? </a>
+                                    </strong>
+                                    <strong>
+                                        <a href="#"> Faça seu cadastro </a>
+                                    </strong>
                                 </ul>
-                               <button type="button" class="btn btn-primary" data-dismiss="modal"> Acesse </button>
-                            </div>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"> Acesse </button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Final do Portfolio Modal 0 -->
-    <!-- Inicio do Portfolio Modal 01 -->
-    <div class="porthelp-block text-dangerfolio-modal modal fade" id="portfolioModal01" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
+</div>
+<!-- Final do Portfolio Modal 0 -->
+<!-- Inicio do Portfolio Modal 01 -->
+<div class="porthelp-block text-dangerfolio-modal modal fade" id="portfolioModal01" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
                     </div>
                 </div>
-                <div class="container">
-                        <div class="col-lg-6">
-                            <div class="modal-body" style="text-align:center;">
-                                <div class="form-group nao-toquei"><center>
-                                    <input type="search" class="form-control" placeholder="O que você procura?" id="search" required data-validation-required-message="O que você procura?" style="width: 500px; height: 55px;">
-                                    <p class="help-block text-danger"></p>
-                                    </center>
-                               </div>
-                            </div> <p align="center">
-                                <button type="button" class="btn btn-primary" data-dismiss="modal" style="background-color: green; border-color: green;"><i class="fa fa-search" aria-hidden="true"></i> Acesse </button></p>
-                            </div>
+            </div>
+            <div class="container">
+                <div class="col-lg-6">
+                    <div class="modal-body" style="text-align:center;">
+                        <div class="form-group nao-toquei">
+                            <center>
+                                <input type="search" class="form-control" placeholder="O que você procura?" id="search" required data-validation-required-message="O que você procura?"
+                                    style="width: 500px; height: 55px;">
+                                <p class="help-block text-danger"></p>
+                            </center>
                         </div>
+                    </div>
+                    <p align="center">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal" style="background-color: green; border-color: green;">
+                            <i class="fa fa-search" aria-hidden="true"></i> Acesse </button>
+                    </p>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Final do Portfolio Modal 01 -->
+</div>
+</div>
+<!-- Final do Portfolio Modal 01 -->
 
-    <!-- Inicio do Portfolio Modal 2 -->
-    <!--<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+<!-- Inicio do Portfolio Modal 2 -->
+<!--<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="close-modal" data-dismiss="modal">
@@ -240,6 +324,6 @@
             </div>
         </div>
     </div>-->
-    <!-- Final do Portfolio Modal 2 -->
-    
+<!-- Final do Portfolio Modal 2 -->
+
 {% endblock %}
