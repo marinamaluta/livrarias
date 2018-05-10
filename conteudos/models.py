@@ -9,13 +9,22 @@ class ODS(models.Model):
 
     def __str__(self):
         return str(self.codigo)
+       
+    class Meta:
+        verbose_name = "ODS"
+        verbose_name_plural = "ODS"
 
 
 class TIPO(models.Model):
     tipo = models.CharField(max_length=50, verbose_name='Tipo')
+    img_material_tipo = models.CharField(max_length=100, blank=True, default='', verbose_name='Img do material tipo')
 
     def __str__(self):
         return str(self.tipo)
+
+    class Meta:
+        verbose_name = "Tipo"
+        verbose_name_plural = "Tipo"
 
 class BNCC(models.Model):
     codigo = models.CharField(max_length=50, verbose_name='Código')
@@ -24,6 +33,9 @@ class BNCC(models.Model):
     def __str__(self):
         return str(self.codigo)
 
+    class Meta:
+        verbose_name = "BNCC"
+        verbose_name_plural = "BNCC"
 
 class PUBLICOALVO(models.Model):
     publico = models.CharField(max_length=50, verbose_name='Público-alvo')
@@ -31,6 +43,9 @@ class PUBLICOALVO(models.Model):
     def __str__(self):
         return str(self.publico)
 
+    class Meta:
+        verbose_name = "Público-alvo"
+        verbose_name_plural = "Público-alvo"
 
 class FAIXAETARIA(models.Model):
     faixa = models.CharField(max_length=50, verbose_name='Faixa Etaria')
@@ -38,6 +53,9 @@ class FAIXAETARIA(models.Model):
     def __str__(self):
         return str(self.faixa)
 
+    class Meta:
+        verbose_name = "Faixa-etária"
+        verbose_name_plural = "Faixa-etária"
 
 class OBJETIVOS(models.Model):
     objetivo = models.CharField(max_length=250, verbose_name='Objetivo')
@@ -45,14 +63,22 @@ class OBJETIVOS(models.Model):
     def __str__(self):
         return str(self.objetivo)
 
+    class Meta:
+        verbose_name = "Objetivos"
+        verbose_name_plural = "Objetivos"
 
 class TEMA(models.Model):
     tema = models.CharField(max_length=250, verbose_name='Tema')
     img_tema = models.CharField(max_length=25, verbose_name='Nome da Img Tema')
+    video_tema_id = models.CharField(max_length=100, blank=True, default='', verbose_name='Video do tema')
+
 
     def __str__(self):
         return str(self.tema)
 
+    class Meta:
+        verbose_name = "Tema"
+        verbose_name_plural = "Tema"
 
 
 class Material(models.Model):
@@ -72,7 +98,8 @@ class Material(models.Model):
 
 
     class Meta:
-        pass
+        verbose_name = "Material"
+        verbose_name_plural = "Materiais"
 
     def __str__(self):
         return str(self.titulo)
