@@ -21,20 +21,20 @@
         <div class="container">
             <div class="row">
                 {% for material in materiais %}
-                <div class="col-md-4">
+                <div class="col-md-3">
 
                     <div class="card border-primary">
                        <img class="card-img-top" src="{{material.imagem_capa}}" style="width: 100%;" alt="Card image cap">
                         <div class="card-header">
-                            <h4 class="card-title ">{{ material.titulo }}</h4>
+                            <h3 class="card-title ">{{ material.titulo }}</h4>
                         </div>
                         <div class="card-body">
                               <p class="card-text" align="justify">{{ material.desc }}</p>
                             <p>{{ material.tags }}</p>
                         </div>
                         <div class="card-footer" style="text-align:center">
-                            <a href="{{ material.link }}" class="btn btn-success">Visualizar</a>
-                            <a href="{{ material.link_venda }}" class="btn btn-primary">Comprar</a></center>
+                            <a href="{{ material.link }}" class="btn limao">Visualizar</a>
+                            <a href="{{ material.link_venda }}" class="btn ceu">Comprar</a></center>
                         </div>
                     </br>
                 </br>

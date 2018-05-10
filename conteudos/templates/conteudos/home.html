@@ -28,9 +28,9 @@
             <div class="col-md-4 col-sm-6 portfolio-item">
                 <a href="{% url 'tema-list' t.id %}" class="portfolio-link" data-toggle="modal">
                     <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
+                        <!-- <div class="portfolio-hover-content">
                             <i class="fa fa-plus fa-3x"></i>
-                        </div>
+                        </div> -->
                     </div>
                     <img src="/static/img/{{ t.img_tema }}" class="img-responsive padrao" alt="Resultado de imagem para modal" title="Resultado de imagem para modal">
                 </a>
@@ -57,8 +57,8 @@
                 </h3> 
             </div>
         </div>
-        <div class="row text-center">
-            <div class="col-md-4">
+        <div class="row text-center teste">
+            <div class="col-md-4 col-sm-6 ">
                 <span class="fa-stack fa-4x">
                     <img src="{% static 'img/tipo_livro.jpg' %}" class="img-circle img-responsive" alt="Resultado de imagem para combo1" title="Resultado de imagem para combo1">
                 </span>
@@ -66,35 +66,35 @@
                 <!--  <p class="text-muted"><a href="#" class="a-personalizado">Materiais pedagógicos para Comunidades</a></p> -->
             </div>
        
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-6">
                 <span class="fa-stack fa-4x">
                     <img src="{% static 'img/tipo_livro.jpg' %}" class="img-circle img-responsive" alt="Resultado de imagem para combo2" title="Resultado de imagem para combo2">
                 </span>
                 <h4 class="service-heading">Planos pedagógicos <input id="checkBox" type="checkbox"></h4> 
             </div>
         
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-6">
                 <span class="fa-stack fa-4x">
                     <img src="{% static 'img/tipo_livro.jpg' %}" class="img-circle img-responsive" alt="Resultado de imagem para combo3" title="Resultado de imagem para combo3">
                 </span>
                 <h4 class="service-heading">Vídeos <input id="checkBox" type="checkbox"></h4>
             </div>
        
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-6">
                 <span class="fa-stack fa-4x">
                     <img src="{% static 'img/tipo_livro.jpg' %}" class="img-circle img-responsive" alt="Resultado de imagem para combo1" title="Resultado de imagem para combo1">
                 </span>
                 <h4 class="service-heading">Aplicativo <input id="checkBox" type="checkbox"></h4>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-6">
                 <span class="fa-stack fa-4x">
                     <img src="{% static 'img/tipo_livro.jpg' %}" class="img-circle img-responsive" alt="Resultado de imagem para combo1" title="Resultado de imagem para combo1">
                 </span>
                 <h4 class="service-heading">Oficina de Formação <input id="checkBox" type="checkbox"></h4>
             </div>
        
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-6">
                 <span class="fa-stack fa-4x">
                     <img src="{% static 'img/tipo_livro.jpg' %}" class="img-circle img-responsive" alt="Resultado de imagem para combo1" title="Resultado de imagem para combo1">
                 </span>
@@ -114,30 +114,32 @@
             </div>
         </div>
         <div class="row text-center">
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-6">
                 <span class="fa-stack fa-4x">
                     <img src="{% static 'img/tipo_livro.jpg' %}" class="img-circle img-responsive" alt="Resultado de imagem para combo1" title="Resultado de imagem para combo1">
                 </span>
                 <h4 class="service-heading">Produtos <input id="checkBox" type="checkbox"></h4>
                 <!--  <p class="text-muted"><a href="#" class="a-personalizado">Materiais pedagógicos para Comunidades</a></p> -->
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-6">
                 <span class="fa-stack fa-4x">
                     <img src="{% static 'img/tipo_livro.jpg' %}" class="img-circle img-responsive" alt="Resultado de imagem para combo2" title="Resultado de imagem para combo2">
                 </span>
                 <h4 class="service-heading">Exposições <input id="checkBox" type="checkbox"></h4>
                 <!-- <p class="text-muted"><a href="#" class="a-personalizado">Materiais pedagógicos para Escolas</a></p>-->
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-6">
                 <span class="fa-stack fa-4x">
                     <img src="{% static 'img/tipo_livro.jpg' %}" class="img-circle img-responsive" alt="Resultado de imagem para combo3" title="Resultado de imagem para combo3">
                 </span>
                 <h4 class="service-heading">Eventos </h4>
                 <!-- <p class="text-muted"><a href="#" class="a-personalizado">Materiais pedagógicos para Agentes Comunitários de Saúde</a></p>-->
             </div>
-        </div>
-        <input type="search" class="form-control" placeholder="O que você procura?" id="search" required="" data-validation-required-message="O que você procura?"
-          >
+        </div>   
+</section>
+<section class="row procure" >
+    <input type="search" class="form-control text-center" placeholder="O que você procura?" id="search" style="width: 600px; height: 40px;" required="" data-validation-required-message="O que você procura?">
+    <a href="#" class="btn btn-primary" style="text-transform: none;">Confirme</a>
 </section>
 
 
@@ -188,18 +190,24 @@
             <div class="col-md-4">
                 <ul class="list-inline social-buttons">
                     <li>
-                        <a href="https://www.facebook.com/" target="_blank">
+                        <a href="https://www.facebook.com/evoluircultural/" target="_blank">
                             <i class="fa fa-facebook"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.youtube.com/" target="_blank">
+                        <a href="https://issuu.com/evoluir" target="_blank">
                             <i class="fa fa-youtube" aria-hidden="true"></i>
                     </li>
                 </ul>
             </div>
             <div class="col-md-4">
                 <ul class="list-inline quicklinks">
+                    <li>
+                        <a href="http://evoluir.com.br/">Sobre a Evoluir</a>
+                    </li>
+                    <li>
+                        <a href="https://editoraevoluir.com.br/">Editora Evoluir</a>
+                    </li>
                     <li>
                         <a href="#">Privacidade</a>
                     </li>

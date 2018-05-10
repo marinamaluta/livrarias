@@ -243,7 +243,7 @@ img.padrao{
 }
 @media (min-width: 768px) {
   .navbar-custom.affix {
-    background-color: #004EA8;
+    background-color: rgb(56, 128, 211, 1);
     padding: 10px 0;
   }
   .navbar-custom.affix .navbar-brand {
@@ -360,12 +360,12 @@ section h3.section-subheading-contato{
   margin: 0 auto;
 }
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
-  background: #f2f2f2;
+  background:rgb(247, 244, 244, 0.5);
   position: absolute;
   width: 100%;
   height: 100%;
   opacity: 0;
-  transition: all ease 0.5s;
+  transition: all ease 0.2s;
   -webkit-transition: all ease 0.5s;
   -moz-transition: all ease 0.5s;
 }
@@ -699,6 +699,31 @@ ul.social-buttons li a:active {
 .btn.active,
 .btn:active:focus {
   outline: none;
+}
+
+.limao{
+  background: #249a10;
+  border-color: #249a10;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.ceu{
+  background: #004EA8;
+  border-color: #004EA8;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.procure{
+justify-content: center;
+display: flex; 
+padding-bottom: 50px;
+}
+
+.teste{
+
+  border-right: 2px solid #999;
 }
 
 /* Final do modo responsivo */

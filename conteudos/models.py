@@ -105,7 +105,7 @@ class Material(models.Model):
         return str(self.titulo)
 
     def h(self, tag):
-        code = '<span class="badge badge-primary" style="background-color:#9DE0AD; color: white;">%s</span>' % (tag)
+        code = '<span class="badge badge-primary" style="background-color:rgb(232,232,232,0.9); color: #392779; ">%s</span>' % (tag)
         return code
 
     def tags(self):
