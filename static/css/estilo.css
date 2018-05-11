@@ -366,7 +366,7 @@ section h3.section-subheading-contato{
   height: 100%;
   opacity: 0;
   transition: all ease 0.2s;
-  -webkit-transition: all ease 0.5s;
+  -webkit-transition: all ease 1s; 
   -moz-transition: all ease 0.5s;
 }
 #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {

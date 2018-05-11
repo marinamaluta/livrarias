@@ -4,9 +4,13 @@
 <header>
     <div class="container">
         <div class="intro-text">
-            <div class="intro-lead-in">Educação <br> Socioambiental</div>
+            <div class="intro-lead-in">
+                Educação <br> Socioambiental
+                <h1> Acesse recursos especialmente selecionados </h1>
+            
+            </div>
             <div class="intro-heading"></div>
-            <a href="#" class="page-scroll btn btn-xl"> Materiais Evoluir</a>
+            <!-- <a href="#" class="page-scroll btn btn-xl"> Materiais Evoluir</a> -->
         </div>
     </div>
 </header>
@@ -17,8 +21,8 @@
     <div class="container" id="materiais">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="section-heading">Materiais sobre Educação Socioambiental</h2>
-                <h3 class="section-subheading text-muted">Encontre todo o conteudo disponível por tema</h3>
+                <h2 class="section-heading">O que você busca hoje?</h2>
+                <h3 class="section-subheading text-muted">Encontre conteúdo sobre o seu tema de interesse</h3>
             </div>
         </div>
 
@@ -36,7 +40,7 @@
                 </a>
                 <div class="portfolio-caption">
                     <h3>{{t.tema}}</h3>
-                    <p class="text-muted a-personalizado">Acesse os materiais disponiveis clicando na foto</p>
+                    <!-- <p class="text-muted a-personalizado">Acesse os materiais disponiveis clicando na foto</p> -->
                 </div>
             </div>
             {% empty %} {% endfor %}
@@ -52,55 +56,59 @@
     <div class="container" id="combos">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="section-heading">Conteúdos disponíveis</h2>
-                <h3 class="section-subheading text-muted"> por materiais </br>
-                </h3> 
+                <h2 class="section-heading">Que tipo de recurso você necessita?</h2>
+                <!--<h3 class="section-subheading text-muted"> por materiais </br> -->
+                </h3>
             </div>
         </div>
         <div class="row text-center teste">
             <div class="col-md-4 col-sm-6 ">
                 <span class="fa-stack fa-4x">
-                    <img src="{% static 'img/tipo_livro.jpg' %}" class="img-circle img-responsive" alt="Resultado de imagem para combo1" title="Resultado de imagem para combo1">
+                    <i class="fa fa-book" aria-hidden="true" class="img-circle img-responsive" alt="Resultado de imagem para combo1" title="Resultado de imagem para combo1"></i>
                 </span>
-                <h4 class="service-heading">Livros <input id="checkBox" type="checkbox"></h4>
+                <h4 class="service-heading">Livros </h4>
                 <!--  <p class="text-muted"><a href="#" class="a-personalizado">Materiais pedagógicos para Comunidades</a></p> -->
-            </div>
-       
-            <div class="col-md-4 col-sm-6">
-                <span class="fa-stack fa-4x">
-                    <img src="{% static 'img/tipo_livro.jpg' %}" class="img-circle img-responsive" alt="Resultado de imagem para combo2" title="Resultado de imagem para combo2">
-                </span>
-                <h4 class="service-heading">Planos pedagógicos <input id="checkBox" type="checkbox"></h4> 
-            </div>
-        
-            <div class="col-md-4 col-sm-6">
-                <span class="fa-stack fa-4x">
-                    <img src="{% static 'img/tipo_livro.jpg' %}" class="img-circle img-responsive" alt="Resultado de imagem para combo3" title="Resultado de imagem para combo3">
-                </span>
-                <h4 class="service-heading">Vídeos <input id="checkBox" type="checkbox"></h4>
-            </div>
-       
-            <div class="col-md-4 col-sm-6">
-                <span class="fa-stack fa-4x">
-                    <img src="{% static 'img/tipo_livro.jpg' %}" class="img-circle img-responsive" alt="Resultado de imagem para combo1" title="Resultado de imagem para combo1">
-                </span>
-                <h4 class="service-heading">Aplicativo <input id="checkBox" type="checkbox"></h4>
             </div>
 
             <div class="col-md-4 col-sm-6">
                 <span class="fa-stack fa-4x">
-                    <img src="{% static 'img/tipo_livro.jpg' %}" class="img-circle img-responsive" alt="Resultado de imagem para combo1" title="Resultado de imagem para combo1">
+                    <i class="fa fa-file-text" aria-hidden="true" class="img-circle img-responsive" alt="Resultado de imagem para combo2" title="Resultado de imagem para combo2"></i>
                 </span>
-                <h4 class="service-heading">Oficina de Formação <input id="checkBox" type="checkbox"></h4>
+                <h4 class="service-heading">Planos pedagógicos </h4>
             </div>
-       
+
             <div class="col-md-4 col-sm-6">
                 <span class="fa-stack fa-4x">
-                    <img src="{% static 'img/tipo_livro.jpg' %}" class="img-circle img-responsive" alt="Resultado de imagem para combo1" title="Resultado de imagem para combo1">
+                    <i class="fa fa-video-camera" aria-hidden="true" class="img-circle img-responsive" alt="Resultado de imagem para combo3"
+                        title="Resultado de imagem para combo3"></i>
                 </span>
-                <h4 class="service-heading">Atividades  <input id="checkBox" type="checkbox"> </h4>
+                <h4 class="service-heading">Vídeos </h4>
             </div>
-       
+
+            <div class="col-md-4 col-sm-6">
+                <span class="fa-stack fa-4x">
+                    <i class="fa fa-mobile" aria-hidden="true" class="img-circle img-responsive" alt="Resultado de imagem para combo1" title="Resultado de imagem para combo1"></i>
+                </span>
+                <h4 class="service-heading">Aplicativo </h4>
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+                <span class="fa-stack fa-4x">
+                    <i class="fa fa-graduation-cap" aria-hidden="true" class="img-circle img-responsive" alt="Resultado de imagem para combo1"
+                        title="Resultado de imagem para combo1"></i>
+                </span>
+                <h4 class="service-heading">Oficina de Formação </h4>
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+                <span class="fa-stack fa-4x">
+                    <i class="fa fa-puzzle-piece" aria-hidden="true" class="img-circle img-responsive" alt="Resultado de imagem para combo1"
+                        title="Resultado de imagem para combo1"></i>
+                </span>
+                <h4 class="service-heading">Jogos Educativos </h4>
+                <!-- <input id="checkBox" type="checkbox"> -->
+            </div>
+
         </div>
     </div>
 
@@ -108,37 +116,43 @@
     <div class="container" id="combos">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="section-heading">Projetos da Evoluir</h2>
-                <h3 class="section-subheading text-muted"> desenvolvidos </br>
-                </h3>
+                <h2 class="section-heading">Qual o seu público de interesse?</h2>
+                <!-- <h3 class="section-subheading text-muted"> desenvolvidos   </h3>-->
+            </br>
+        </br>
             </div>
+        </br>
+    </br>
         </div>
         <div class="row text-center">
             <div class="col-md-4 col-sm-6">
                 <span class="fa-stack fa-4x">
                     <img src="{% static 'img/tipo_livro.jpg' %}" class="img-circle img-responsive" alt="Resultado de imagem para combo1" title="Resultado de imagem para combo1">
                 </span>
-                <h4 class="service-heading">Produtos <input id="checkBox" type="checkbox"></h4>
+                <h4 class="service-heading">Alunos
+                   <!-- <input id="checkBox" type="checkbox"> -->
+                </h4>
                 <!--  <p class="text-muted"><a href="#" class="a-personalizado">Materiais pedagógicos para Comunidades</a></p> -->
             </div>
             <div class="col-md-4 col-sm-6">
                 <span class="fa-stack fa-4x">
                     <img src="{% static 'img/tipo_livro.jpg' %}" class="img-circle img-responsive" alt="Resultado de imagem para combo2" title="Resultado de imagem para combo2">
                 </span>
-                <h4 class="service-heading">Exposições <input id="checkBox" type="checkbox"></h4>
+                <h4 class="service-heading">Professores </h4>
                 <!-- <p class="text-muted"><a href="#" class="a-personalizado">Materiais pedagógicos para Escolas</a></p>-->
             </div>
             <div class="col-md-4 col-sm-6">
                 <span class="fa-stack fa-4x">
                     <img src="{% static 'img/tipo_livro.jpg' %}" class="img-circle img-responsive" alt="Resultado de imagem para combo3" title="Resultado de imagem para combo3">
                 </span>
-                <h4 class="service-heading">Eventos </h4>
+                <h4 class="service-heading">Comunidade</h4>
                 <!-- <p class="text-muted"><a href="#" class="a-personalizado">Materiais pedagógicos para Agentes Comunitários de Saúde</a></p>-->
             </div>
-        </div>   
+        </div>
 </section>
-<section class="row procure" >
-    <input type="search" class="form-control text-center" placeholder="O que você procura?" id="search" style="width: 600px; height: 40px;" required="" data-validation-required-message="O que você procura?">
+<section class="row procure">
+    <input type="search" class="form-control text-center" placeholder="O que você procura?" id="search" style="width: 600px; height: 40px;"
+        required="" data-validation-required-message="O que você procura?">
     <a href="#" class="btn btn-primary" style="text-transform: none;">Confirme</a>
 </section>
 
@@ -146,7 +160,7 @@
 <!-- Final da section Serviço -->
 
 <!-- Início da section Team-->
-<section id="team" class="bg-light-gray">
+<!--<section id="team" class="bg-light-gray">
     <div class="container" id="ODS">
         <div class="row">
             <div class="col-lg-12 text-center">
@@ -167,7 +181,7 @@
     </br>
 
     <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 text-center">
+        <div class="col-lg-8 col-lg-offset-2 text-center" style="padding-bottom: 30px;">
             <p class="large text-muted">Nesta agenda estão previstas ações mundiais nas áreas de erradicação da pobreza, segurança alimentar, agricultura,
                 saúde, educação, igualdade de gênero, redução das desigualdades, energia, água e saneamento, padrões sustentáveis
                 de produção e de consumo, mudança do clima, cidades sustentáveis, proteção e uso sustentável dos oceanos
@@ -176,7 +190,7 @@
         </div>
     </div>
     </div>
-</section>
+</section>-->
 <!-- Final da section Team-->
 
 <footer>
@@ -184,7 +198,7 @@
         <div class="row">
             <div class="col-md-4">
                 <span class="copyright">Copyright Evoluir&copy;
-                    <br>Feito com ❤ por Marina </br>
+                    <br>Feito com ❤ por Evoluir Cultural</br>
                 </span>
             </div>
             <div class="col-md-4">
