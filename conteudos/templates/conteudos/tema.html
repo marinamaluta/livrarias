@@ -6,7 +6,7 @@
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading">{{ tema }}</h2>
-                <h3 class="section-subheading text-muted">Materiais didáticos para sensibilizar e conscientizar sobre Educação Socioambiental </h3>
+                <h3 class="section-subheading text-muted" style="background-color:transparent">Materiais didáticos para sensibilizar e conscientizar sobre Educação Socioambiental </h3>
                 <embed src="https://www.youtube.com/embed/{{ tema.video_tema_id }}" allowfullscreen="true" width="400px" height="300px">
             </div>
 
@@ -28,7 +28,7 @@
                         <h2 class="display-5"> {{ k }}</h2>
                         <!--<p class="lead">xxxxxxxxxxx</p> -->
                         <a href="{% url 'tema-tipo' x v %}">
-                            <img class="card-img-top" src="/static/img/{{tipo_img|get_item:k }}" style=" height: 60%; width: 60%;"
+                            <img class="card-img-top" src="/static/img/{{tipo_img|get_item:k }}" style=" height: 60%; width: 60%; padding: 10px;"
                                 alt="Imagem Material" href="{% url 'tema-tipo' x v %}">
                         </a>
                     </div>
