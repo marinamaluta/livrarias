@@ -871,10 +871,5 @@ body {
   border: 2px solid #403c23;
 }
 
-/* invalido */
-.form-group:not(.nao-toquei) input:invalid,
-.form-group:not(.nao-toquei) textarea:invalid {
-  border: 2px solid red;
-}
 
 /* Final Formulário */

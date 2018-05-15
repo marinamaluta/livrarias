@@ -32,39 +32,3 @@
 
 })(jQuery);
  // Final do "use strict"
-
- // Inicio do JS do formulário
-
-var fonte = document.querySelector('[data-contador-fonte]');
-var inputs = document.querySelectorAll('#contactForm input');
-var destino = document.querySelector('[data-contador-destino]');
-
-for (var i = 0; i < inputs.length; i++) {
-    var input = inputs[i];
-    input.addEventListener('keydown', function() {
-        this.parentNode.classList.remove('nao-toquei');
-    })
-}
-
-fonte.addEventListener('keyup', function() {
-  var digitado = fonte.value.length;
-  var restante = 150 - digitado;
-  destino.textContent = restante;
-  this.parentNode.classList.remove('nao-toquei');
-});
-
-var formulario = document.querySelector('form');
-
-formulario.addEventListener('submit', function(evento) {
-  evento.preventDefault();
-  if(this.checkValidity() == true) {
-    alert('Obrigada pelo seu contato! Qualquer dúvida, entre em contato diretamente pelo tel (11) 9999-9999');
-  } else {
-    alert('Preencha todos os campos corretamente')
-  }
-});
-
-
-// FInal do JS do formulário
-
-// Final do JavaScript
