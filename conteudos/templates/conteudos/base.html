@@ -54,19 +54,19 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#materiais">Temas</a>
+                        <a class="page-scroll" href="{{ request.scheme }}://{{ request.get_host }}{% url 'index' %}#materiais">Temas</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#combos">Conteúdos</a>
+                        <a class="page-scroll" href="{{ request.scheme }}://{{ request.get_host }}{% url 'index' %}#combos">Conteúdos</a>
                     </li>
                     <li>
-                        <a href="www.evoluir.com.br" data-toggle="modal">EVOLUIR</a>
+                        <a href="http://www.evoluir.com.br" data-toggle="modal">EVOLUIR</a>
                     </li>
-                    <li>
+                    <!-- <li>
                         <a class="page-scroll" href="#portfolioModal01" data-toggle="modal">
                             <i class="fa fa-search" aria-hidden="true"></i>
                         </a>
-                    </li>
+                    </li>-->
                 </ul>
             </div>
         </div>

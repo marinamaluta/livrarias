@@ -8,7 +8,7 @@ def index(request):
     _template = 'conteudos/home.html'
     materiais = Material.objects.all()
     temas = TEMA.objects.all()
-    _args = {'materiais': materiais, 'temas': temas}
+    _args = {'materiais': materiais, 'temas': temas, 'request': request}
     return render(request, template_name=_template, context=_args)
 
 
