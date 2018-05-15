@@ -27,7 +27,35 @@
                     <h3 class="card-title ">{{ material.titulo }}</h4>
                 </div>
                 <div class="card-body">
-                    <p class="card-text" align="justify">{{ material.desc }}</p>
+
+                    {% if material.desc|length <= 250 %}
+                        <p class="card-text" align="justify">{{ material.desc }}</p>
+                    {% else %}
+                    <p class="card-text" align="justify">{{ material.desc|truncatechars:250 }}<u><a href="#" data-toggle="modal" data-target="#myModal">[Ver mais]</a></u>
+</p>
+                        <!-- Button trigger modal -->
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">{{ material.titulo }}</h4>
+                          </div>
+                          <div class="modal-body" style="text-align:center;">
+                              <img class="card-img-top" src="{{material.imagem_capa}}" style="width: 50%; height: 250px;" alt="Card image cap">
+                              <p align="center">{{ material.desc }}</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    {% endif %}
+
                     <p class= "card-text-tags" align="justify" >{{ material.tags }}</p>
                 </div>
                 <div class="card-footer" style="text-align:center">
