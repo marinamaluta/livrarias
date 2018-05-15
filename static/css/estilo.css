@@ -15,6 +15,24 @@ p {
   font-size: 14px;
   line-height: 1.75;
 }
+
+.card-text{
+  max-width: 300ch;
+  height: 200px;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  text-overflow: ellipsis;
+  white-space: wrap;
+  overflow-x: auto;
+}
+
+.card-text-tags{
+  height: 50px;
+}
+
 p.large {
   font-size: 16px;
 }
@@ -25,14 +43,13 @@ a:active,
 a.active {
   outline: none;
 }
-a {
-  color: #fed136;
-}
+
+a,
 a:hover,
 a:focus,
 a:active,
 a.active {
-  color: #fec503;
+  color: #392779;
 }
 h1,
 h2,
@@ -240,6 +257,11 @@ img.padrao{
 .img-responsive.padrao{
   object-fit: cover;
   border-radius: 40px;
+}
+
+.card-header{
+  margin-bottom: 20px;
+  height: 20px;
 }
 
 /* Final do estilo navbar padrão */
