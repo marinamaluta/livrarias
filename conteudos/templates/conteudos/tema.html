@@ -28,8 +28,8 @@
                         <h2 class="display-5"> {{ k }}</h2>
                         <!--<p class="lead">xxxxxxxxxxx</p> -->
                         <a href="{% url 'tema-tipo' x v %}">
-                            <img class="card-img-top" src="/static/img/{{tipo_img|get_item:k }}" style=" height: 60%; width: 60%; padding: 10px;"
-                                alt="Imagem Material" href="{% url 'tema-tipo' x v %}">
+                            <i class="{{tipo_img|get_item:k }} fa-5x" aria-hidden="true" class="img-circle img-responsive" alt="Resultado de imagem para combo1" title="Resultado de imagem para combo1"></i>
+                        <!-- img class="card-img-top" src="/static/img/{{tipo_img|get_item:k }}" style=" height: 60%; width: 60%; padding: 10px;" alt="Imagem Material" href="{% url 'tema-tipo' x v %}"> -->
                         </a>
                     </div>
                     </br>
