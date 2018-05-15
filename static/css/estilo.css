@@ -321,12 +321,11 @@ header .intro-text .intro-heading {
     line-height: 70px;
     margin-bottom: 5px;
     text-shadow: 4px 4px #004EA8;
-
   }
   
 }
 section {
-  padding: 100px 0 0 0;
+  padding: 50px ;
 }
 section h2.section-heading {
   font-size: 40px;
@@ -359,7 +358,7 @@ section h3.section-subheading-contato{
 
 @media (min-width: 768px) {
   section {
-    padding: 100px 0 50px 0;
+    padding: 70px;
   }
 }
 .service-heading {
