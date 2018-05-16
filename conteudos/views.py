@@ -17,14 +17,21 @@ def tema(request, x):
     tema = TEMA.objects.get(id=x)
     materiais = Material.objects.filter(tema=tema)
     db_tipo = TIPO.objects.all()
-
+    vid = ''
+    site = ''
+    try:
+        video_tema_id = tema.video_tema_id
+        vid = video_tema_id.split('_')[1]
+        site = video_tema_id.split('_')[0]
+    except:
+        pass
     tipo = {}
     tipo_img = {}
     for t in materiais:
         tipo[t.tipo.tipo] = t.tipo.id
         tipo_img[t.tipo.tipo] = t.tipo.img_material_tipo
 
-    _args = {'tema': tema, 'tipo': tipo, 'x': x, 'tipo_img': tipo_img}
+    _args = {'tema': tema, 'tipo': tipo, 'x': x, 'tipo_img': tipo_img, 'vid':vid, 'site':site}
     return render(request, template_name=_template, context=_args)
 
 def tema_tipo(request, x, tipo):
