@@ -19,14 +19,7 @@ p {
 .card-text{
   max-width: 300ch;
   height: 200px;
-  white-space: -moz-pre-wrap;
-  white-space: -pre-wrap;
-  white-space: -o-pre-wrap;
-  white-space: pre-wrap;
-  word-wrap: break-word;
-  text-overflow: ellipsis;
-  white-space: wrap;
-  overflow-x: auto;
+ 
 }
 
 .card-text-tags{
