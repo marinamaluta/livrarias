@@ -1,0 +1,31 @@
+{% extends 'conteudos/base.html' %} {% load static %} {% block content %} {% load conteudo_extras %}
+
+<section id="stats">
+<br />
+
+<div class="container">
+	<div class="row">
+
+            {% for tipo, quantidade in valores.items %}
+            <div class="col-md-4">
+                <!-- <div class="hero-widget well well-sm" style="background-color: {{cores|random}};"> -->
+                <div class="hero-widget well well-sm" style="">
+                <div class="icon">
+                     <i class="{{ quantidade.1 }}"></i>
+                </div>
+                <div class="text">
+                    <var>{{ quantidade.0 }}</var>
+                    <label class="text-muted">{{ tipo }}</label>
+                </div>
+                <div class="options">
+                    <a href="javascript:;" class="btn btn-primary btn-lg">Saiba mais </a>
+                </div>
+                </div>
+            </div>
+        {% endfor %}
+
+  	</div>
+</div>
+</section>
+
+{% endblock %}

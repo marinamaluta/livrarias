@@ -12,6 +12,17 @@ def index(request):
     return render(request, template_name=_template, context=_args)
 
 
+def estatisticas(request):
+    _template = 'conteudos/estatisticas.html'
+    valores = {}
+    for _tipo in TIPO.objects.all():
+        valores[_tipo.tipo] = (len(Material.objects.filter(tipo=_tipo)), _tipo.img_material_tipo)
+
+    cores = ['red', 'blue', 'green', 'purple']
+    _args = {'valores': valores, 'cores': cores}
+    return render(request, template_name=_template, context=_args)
+
+
 def tema(request, x):
     _template = 'conteudos/tema.html'
     tema = TEMA.objects.get(id=x)
