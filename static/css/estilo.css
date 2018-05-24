@@ -318,7 +318,7 @@ header .intro-text .intro-lead-in{
   line-height: 50px;
   text-transform: uppercase;
   margin-bottom: 5px;
-  text-shadow: 2px 2px #004EA8;
+  text-align: center;
   padding: 20px 0;
 }
 header .intro-text .intro-heading {
@@ -340,9 +340,10 @@ header .intro-text .intro-heading {
     font-family: "Lato",Arial,Helvetica,sans-serif, "Montserrat", "Helvetica Neue";
     font-size: 70px;
     font-weight: bold;
+    text-align: center;
     line-height: 70px;
     margin-bottom: 5px;
-    text-shadow: 4px 4px #004EA8;
+ 
   }
   
 }
