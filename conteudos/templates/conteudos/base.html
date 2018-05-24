@@ -49,19 +49,32 @@
 
             <!-- Inicio dos links da navbar -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav navbar-right ">
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
                     <li>
                         <a class="page-scroll" href="{{ request.scheme }}://{{ request.get_host }}{% url 'index' %}#materiais">Temas</a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="{{ request.scheme }}://{{ request.get_host }}{% url 'index' %}#combos">Conteúdos</a>
+                    <li class="dropdown ">
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Materiais
+                                  </a>
+                                <div class="dropdown-menu navbar_menu" aria-labelledby="dropdownMenuLink" style="font-style:20px;">
+                                    <a class="dropdown-item " href="#">Livros</a><br>
+                                    <a class="dropdown-item" href="#">Planos Pedagógicos</a><br>
+                                    <a class="dropdown-item" href="#">Vídeos</a><br>
+                                    <a class="dropdown-item" href="#">Aplicativos</a><br>
+                                    <a class="dropdown-item" href="#">Oficina de Formação</a><br>
+                                    <a class="dropdown-item" href="#">Jogos</a><br>
+                                    <a class="dropdown-item" href="#">Exposição</a><br>
+                                    <a class="dropdown-item" href="#">Evento</a><br>
+                                    <a class="dropdown-item" href="#">Atividades</a><br>
+                                    <a class="dropdown-item" href="#">Programas Educacionais</a>
+                                </div>
                     </li>
 
                     <li>
-                        <a class="page-scroll" href="{% url 'stats' %}">Estatísticas</a>
+                        <a class="page-scroll" href="{% url 'stats' %}">Conteúdos</a>
                     </li>
 
 

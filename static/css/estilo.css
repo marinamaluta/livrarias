@@ -212,7 +212,7 @@ fieldset[disabled] .btn-xl.active {
 .navbar-custom .navbar-toggle:focus {
   background-color: #004EA8;
 }
-.navbar-custom .nav li a {
+.navbar-custom .nav li a{
   font-family: "Lato",Arial,Helvetica,sans-serif, "Montserrat", "Helvetica Neue";
   text-transform: uppercase;
   font-weight: bold;
@@ -220,6 +220,11 @@ fieldset[disabled] .btn-xl.active {
   color: #004EA8;
   font-size: 12px;
 }
+
+.navbar_menu {
+  padding: 15px;
+}
+
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
   color: write;
@@ -372,6 +377,9 @@ section h3.section-subheading-contato{
   padding: 20px 0;
 }
 
+.row{
+  padding-top: 50px;
+}
 
 @media (min-width: 768px) {
   section {
