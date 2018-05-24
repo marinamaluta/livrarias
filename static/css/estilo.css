@@ -215,7 +215,7 @@ fieldset[disabled] .btn-xl.active {
 .navbar-custom .nav li a{
   font-family: "Lato",Arial,Helvetica,sans-serif, "Montserrat", "Helvetica Neue";
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 1000;
   letter-spacing: 1px;
   color: #004EA8;
   font-size: 12px;
@@ -296,10 +296,10 @@ img.padrao{
   }
 }
 header {
-  background-image: url('../img/capa_brk_1.png');
+  background-image: url('../img/BG.jpg');
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-position: center center;
+
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -360,7 +360,6 @@ section h3.section-subheading {
   font-family: "Lato",Arial,Helvetica,sans-serif, "Montserrat", "Helvetica Neue";
   text-transform: none;
   font-weight: 400;
-  font-style: italic;
   margin-bottom: 75px;
   line-height: 1.5;
 
@@ -371,7 +370,6 @@ section h3.section-subheading-contato{
   font-family: "Lato",Arial,Helvetica,sans-serif, "Montserrat", "Helvetica Neue";
   text-transform: none;
   font-weight: 400;
-  font-style: italic;
   margin-bottom: 75px;
   color: #403c23;
   background-color: #fec503;
@@ -380,6 +378,10 @@ section h3.section-subheading-contato{
 
 .row{
   padding-top: 50px;
+}
+
+.container{
+  padding: 0;
 }
 
 @media (min-width: 768px) {
