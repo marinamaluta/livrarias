@@ -72,6 +72,7 @@ h1{
   color: #004EA8;
   font-weight: 900;
  text-transform: uppercase;
+ text-align: center;
   
 }
 
@@ -249,10 +250,11 @@ fieldset[disabled] .btn-xl.active {
   background-color: #004EA8;
 }
 
-img.padrao{
+/* ITEM PARA ALINHA TAMANHO DA IMG */
+/*img.padrao{
   height: 195.5px;
   width: 390px;
-}
+}*/
 .foto-cardapio {
   height:inherit;
   border-radius: 80%;
@@ -307,7 +309,6 @@ header {
   background-image: url('../img/BG.1.jpg');
   background-repeat: no-repeat;
   background-attachment: scroll;
-
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
