@@ -265,10 +265,6 @@ fieldset[disabled] .btn-xl.active {
   border-radius: 40px;
 }
 
-.img.padrao{
-  height: 150px;
-}
-
 .card-header{
   margin-bottom: 20px;
   height: 20px;
@@ -277,8 +273,8 @@ fieldset[disabled] .btn-xl.active {
 .display-5{
   color:gray;
   font-weight: lighter;
-
 }
+
 
 /* Final do estilo navbar padrão */
 
