@@ -197,7 +197,7 @@ fieldset[disabled] .btn-xl.active {
 }
 .navbar-custom .navbar-brand {
   color: #004EA8;
-  font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
+  font-family: 'Gotham';
 }
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .navbar-brand:focus,
@@ -211,7 +211,7 @@ fieldset[disabled] .btn-xl.active {
 .navbar-custom .navbar-toggle {
   background-color: #e7e7e7;
   border-color: #e7e7e7;
-  font-family: "Lato",Arial,Helvetica,sans-serif, "Montserrat", "Helvetica Neue";
+  font-family: 'Gotham';
   text-transform: uppercase;
   color: white;
   font-size: 14px;
