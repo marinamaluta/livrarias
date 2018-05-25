@@ -250,11 +250,7 @@ fieldset[disabled] .btn-xl.active {
   background-color: #004EA8;
 }
 
-/* ITEM PARA ALINHA TAMANHO DA IMG */
-/*img.padrao{
-  height: 195.5px;
-  width: 390px;
-}*/
+
 .foto-cardapio {
   height:inherit;
   border-radius: 80%;
@@ -269,9 +265,19 @@ fieldset[disabled] .btn-xl.active {
   border-radius: 40px;
 }
 
+.img.padrao{
+  height: 150px;
+}
+
 .card-header{
   margin-bottom: 20px;
   height: 20px;
+}
+
+.display-5{
+  color:gray;
+  font-weight: initial;
+
 }
 
 /* Final do estilo navbar padrão */
