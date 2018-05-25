@@ -3,7 +3,16 @@
 
 body {
   overflow-x: hidden;
-  font-family: "Lato",Arial,Helvetica,sans-serif, "Montserrat", "Helvetica Neue";
+  font-family: 'Gotham';
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/Gotham-Black.otf'),
+        url('../fonts/Gotham-Bold.otf');
+
+  font-weight: normal;
+  font-style: normal;
 }
 .text-muted {
   color: #777777;
@@ -50,19 +59,18 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Lato",Arial,Helvetica,sans-serif, "Montserrat", "Helvetica Neue";
+  font-family: 'Gotham';
   font-weight: bold;
 }
 
 h1{
-  font-size: 36px;
+  font-size: 28px;
   text-transform: initial;
 }
 
 #cardscolor {
   color: #004EA8;
-  font-size: 12px;
-  font-weight: 700;
+  font-weight: 900;
  text-transform: uppercase;
   
 }
@@ -296,7 +304,7 @@ img.padrao{
   }
 }
 header {
-  background-image: url('../img/BG.jpg');
+  background-image: url('../img/BG.1.jpg');
   background-repeat: no-repeat;
   background-attachment: scroll;
 
@@ -313,21 +321,20 @@ header .intro-text {
   padding-bottom: 50px;
 }
 header .intro-text .intro-lead-in{
-  font-family: "Lato",Arial,Helvetica,sans-serif, "Montserrat", "Helvetica Neue";
-  font-size: 52px;
+  font-family: 'Gotham';
+  font-size: 48px;
   line-height: 50px;
   text-transform: uppercase;
   margin-bottom: 5px;
   text-align: center;
-  padding: 20px 0;
+  padding: 140px 0 0 0;
 }
 header .intro-text .intro-heading {
-  font-family: "Lato",Arial,Helvetica,sans-serif, "Montserrat", "Helvetica Neue";
+  font-family: 'Gotham';
   text-transform: uppercase;
   font-weight: bold;
   font-size: 22px;
   line-height: 50px;
-  margin-bottom: 25px;
   text-shadow: 2px 2px #004EA8;
 
 }
@@ -337,29 +344,25 @@ header .intro-text .intro-heading {
     padding-bottom: 200px;
   }
   header .intro-text .intro-lead-in {
-    font-family: "Lato",Arial,Helvetica,sans-serif, "Montserrat", "Helvetica Neue";
+    font-family: 'Gotham';
     font-size: 70px;
     font-weight: bold;
     text-align: center;
     line-height: 70px;
     margin-bottom: 5px;
- 
   }
   
-}
-section {
-  padding: 50px ;
-}
+
 section h2.section-heading {
   font-size: 40px;
   margin-top: 0;
   margin-bottom: 15px;
 }
 section h3.section-subheading {
-  font-size: 20px;
-  font-family: "Lato",Arial,Helvetica,sans-serif, "Montserrat", "Helvetica Neue";
+  font-size: 18px;
+  font-family: 'Gotham';
   text-transform: none;
-  font-weight: 400;
+  font-weight: 600;
   margin-bottom: 75px;
   line-height: 1.5;
 
@@ -438,7 +441,7 @@ section h3.section-subheading-contato{
   margin: 0 auto;
   background-color: white;
   text-align: center;
-  padding: 25px;
+  padding: 10px 0 25px 0;
 }
 #portfolio .portfolio-item .portfolio-caption h4 {
   text-transform: none;
