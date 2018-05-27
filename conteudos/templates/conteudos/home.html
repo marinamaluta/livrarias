@@ -43,9 +43,9 @@
                     <h3 id="cardscolor">{{t.tema}}</h3>
                     <!-- <p class="text-muted a-personalizado">Acesse os materiais disponiveis clicando na foto</p> -->
                 </div>
-                <div>
+                <div class="tags_central">
                   {% for t1 in t.tipos_relacionados %}
-                    <img src='{{t1}}' style='max-width:5%;' />
+                    <img src='{{t1}}' style='max-width:6%; filter: contrast(175%) brightness(3%);'/>
                   {% empty %}
                   {% endfor %}
                 </div>
@@ -74,7 +74,7 @@
             <div class="col-md-2 col-sm-2 ">
                 <a href="{% url 'tipo' tipo.id %}">
                 <span class="fa-stack fa-4x">
-                    <img src="{{ tipo.img_material_tipo }}" style='max-width:20px;'></img>
+                    <img src="{{ tipo.img_material_tipo }}" style='max-width:50px;'></img>
                 </span>
                 <h4 class="service-heading">{{ tipo.tipo }}</h4></a>
                 <!--  <p class="text-muted"><a href="#" class="a-personalizado">Materiais pedagógicos para Comunidades</a></p> -->

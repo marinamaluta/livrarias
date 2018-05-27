@@ -5,7 +5,7 @@ from django.utils.html import escape, mark_safe
 
 class ODS(models.Model):
     codigo = models.CharField(max_length=50, verbose_name='Código')
-    desc = models.CharField(max_length=300, blank=True, verbose_name='Descrição')
+    desc = models.CharField(max_length=350, blank=True, verbose_name='Descrição')
 
     def __str__(self):
         return str(self.codigo)
@@ -111,7 +111,7 @@ class Material(models.Model):
         return str(self.titulo)
 
     def h(self, tag):
-        code = '<span class="badge badge-primary" style="background-color:rgb(232,232,232,0.9); color: #392779; ">%s</span>' % (tag)
+        code = '<span class="badge badge-primary" style="background-color:#392779; color: white; ">%s</span>' % (tag)
         return code
 
     def tags(self):

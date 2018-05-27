@@ -23,6 +23,8 @@ body {
 p {
   font-size: 14px;
   line-height: 1.75;
+  color: dimgrey;
+  font-family: 'Gotham-Light';
 }
 
 .card-text{
@@ -33,6 +35,7 @@ p {
 
 .card-text-tags{
   height: 50px;
+
 }
 
 p.large {
@@ -73,8 +76,9 @@ h4{
 }
 
 #cardscolor {
-  color: #004EA8;
-  font-weight: 900;
+color: #004EA8;
+font-weight: 900;
+height: 25px;
  text-transform: uppercase;
  text-align: center;
   
@@ -242,7 +246,7 @@ fieldset[disabled] .btn-xl.active {
 }
 .navbar-custom .navbar-nav > .active > a {
   border-radius: 0;
-  color: red;
+  color: white;
   background-color:#004EA8;
 }
 .navbar-custom .navbar-nav > .active > a:hover,
@@ -279,6 +283,10 @@ fieldset[disabled] .btn-xl.active {
 #mainNav{
   padding-top: 10px;
 }
+
+.tags_central{
+  text-align: center;
+}
 /* Final do estilo navbar padrão */
 
 /* Inicio do modo resposivo */
@@ -286,15 +294,15 @@ fieldset[disabled] .btn-xl.active {
   .navbar-custom {
     background-color: transparent;
     padding: 25px 0;
-    -webkit-transition: padding 0.1s;
-    -moz-transition: padding 0.1s;
-    transition: padding 0.1s;
+    -webkit-transition: padding 0s;
+    -moz-transition: padding 0s;
+    transition: padding 0.3s;
     border: none;
   }
   .navbar-custom .navbar-brand {
     font-size: 2em;
-    -webkit-transition: all 0.1s;
-    -moz-transition: all 0.1s;
+    -webkit-transition: all 0s;
+    -moz-transition: all 0s;
     transition: all 0.1s;
   }
   .navbar-custom .navbar-nav > .active > a {
@@ -368,7 +376,7 @@ section h2.section-heading {
 }
 section h3.section-subheading {
   font-size: 18px;
-  font-family: 'Gotham';
+  font-family: 'GothamMedium_1';
   text-transform: none;
   font-weight: 600;
   margin-bottom: 75px;
@@ -449,7 +457,7 @@ section h3.section-subheading-contato{
   margin: 0 auto;
   background-color: white;
   text-align: center;
-  padding: 10px 0 25px 0;
+  padding: 10px 0 0 0;
 }
 #portfolio .portfolio-item .portfolio-caption h4 {
   text-transform: none;
@@ -457,7 +465,7 @@ section h3.section-subheading-contato{
   font-size: 14px;
 }
 #portfolio .portfolio-item .portfolio-caption p {
-  font-family: "Lato",Arial,Helvetica,sans-serif, "Montserrat", "Helvetica Neue";
+  font-family: 'Gotham';
   font-style: italic;
   font-size: 12px;
   margin: 0;
