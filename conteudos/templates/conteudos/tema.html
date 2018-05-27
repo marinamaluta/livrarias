@@ -9,7 +9,7 @@
                 <h3 class="section-subheading text-muted" style="background-color:transparent">{{tema.subtema}}</h3>
                 {% if site == 'youtube' %}
                 <embed src="https://www.youtube.com/embed/{{ vid }}" allowfullscreen="true" width="400px" height="300px"> {% else %}
-                <iframe src="https://player.vimeo.com/video/{{ vid }}?autoplay=1&loop=1&autopause=0" width="500" height="281" frameborder="0"
+                <iframe src="https://player.vimeo.com/video/{{ vid }}?loop=1&autopause=0" width="500" height="281" frameborder="0"
                     webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                 {% endif %}
             </div>
