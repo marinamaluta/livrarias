@@ -43,8 +43,15 @@
                     <h3 id="cardscolor">{{t.tema}}</h3>
                     <!-- <p class="text-muted a-personalizado">Acesse os materiais disponiveis clicando na foto</p> -->
                 </div>
+                <div>
+                  {% for t in t.tipos_relacionados %}
+                    <img src='{{t}}' style='max-width:10%;' />
+                  {% empty %}
+                  {% endfor %}
+                </div>
             </div>
-            {% empty %} {% endfor %}
+            {% empty %}
+            {% endfor %}
         </div>
 
     </div>

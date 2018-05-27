@@ -9,11 +9,10 @@ class ODS(models.Model):
 
     def __str__(self):
         return str(self.codigo)
-       
+        
     class Meta:
         verbose_name = "ODS"
         verbose_name_plural = "ODS"
-
 
 class TIPO(models.Model):
     tipo = models.CharField(max_length=50, verbose_name='Tipo')
@@ -73,6 +72,12 @@ class TEMA(models.Model):
     img_tema = models.CharField(max_length=25, default='', verbose_name='Nome da Img Tema')
     video_tema_id = models.CharField(max_length=100, blank=True, default='', verbose_name='Video do tema')
 
+    def tipos_relacionados(self):
+        materiais = Material.objects.filter(tema=self)
+        l = []
+        for material in materiais:
+            l.append(material.tipo.img_material_tipo)
+        return list(set(l))
 
     def __str__(self):
         return str(self.tema)
