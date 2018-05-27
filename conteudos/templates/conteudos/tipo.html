@@ -14,20 +14,58 @@
 <section id="tipos">
   <div class="container">
     <div class="row">
-    {% for i in items %}
-      <div class="col-md-4">
-        <img src={{i.imagem_capa}} style="width: 100%; height: 250px;" />
-        <b>TITULO:  </b>{{i.titulo}}<br>
-        <b>TEMA: </b><span class="badge badge-primary">{{i.tema}}</span><br>
-        <b>PREÇO: </b>{{i.preco}}<br>
-        <a href="{{i.link}}" class="btn ceu">VER</a>
-        <a href="{{i.link_venda}}" class="btn limao">COMPRAR</a>
-        <br>
-        <hr>
-      </div>
-      {% empty %}
+    {% for material in items %}
+    <div class="col-md-3">
 
-    {% endfor %}
+        <div class="card border-primary">
+            <img class="card-img-top" src="{{material.imagem_capa}}" style="width: 100%; height: 250px;" alt="Card image cap">
+            <div class="card-header">
+                <h3 class="card-title ">{{ material.titulo }}</h4>
+            </div>
+            <div class="card-body">
+
+                {% if material.desc|length <= 220 %}
+                    <p class="card-text" align="justify">{{ material.desc }}</p>
+                {% else %}
+                <p class="card-text" align="justify">{{ material.desc|truncatechars:220 }}<u><a href="#" data-toggle="modal" data-target="#myModal">[Ver mais]</a></u>
+</p>
+                    <!-- Button trigger modal -->
+
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">{{ material.titulo }}</h4>
+                      </div>
+                      <div class="modal-body" style="text-align:center;">
+                          <img class="card-img-top" src="{{material.imagem_capa}}" style="width: 50%; height: 250px;" alt="Card image cap">
+                          <p align="center">{{ material.desc }}</p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                {% endif %}
+                <p class= "card-text-tags" align="justify" >{{ material.tags }}</p>
+                <br>
+    <p class= "" align="justify" ><b>Valor:</b> R$ {{ material.preco }}</p>
+            </div>
+            <div class="card-footer" style="text-align:center">
+                <a href="{{ material.link }}" class="btn ceu">Visualizar</a>
+                <a href="{{ material.link_venda }}" class="btn limao">Comprar</a>
+                </center>
+            </div>
+            </br>
+            </br>
+
+        </div>
+    </div>
+
+    {% empty %} {% endfor %}
 
   </div>
   </div>
