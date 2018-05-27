@@ -12,6 +12,8 @@ Icon
 .idea/
 *.idea/
 
+venv/
+
 conteudos/migrations/
 
 # Thumbnails
