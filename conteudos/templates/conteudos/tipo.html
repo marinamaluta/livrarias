@@ -13,15 +13,23 @@
 
 <section id="tipos">
   <div class="container">
+    <div class="row">
     {% for i in items %}
-      <b>TITULO:  </b>{{i.titulo}}<br>
-      <b>TEMA: </b>{{i.tema}}<br>
-      <b>PREÇO: </b>{{i.preco}}<br>
-      <b>LINK: </b><a href="{{i.link_venda}}">{{i.link_venda}}</a><br>
-      <hr>
-    {% empty %}
+      <div class="col-md-4">
+        <img src={{i.imagem_capa}} style="width: 100%; height: 250px;" />
+        <b>TITULO:  </b>{{i.titulo}}<br>
+        <b>TEMA: </b><span class="badge badge-primary">{{i.tema}}</span><br>
+        <b>PREÇO: </b>{{i.preco}}<br>
+        <a href="{{i.link}}" class="btn ceu">VER</a>
+        <a href="{{i.link_venda}}" class="btn limao">COMPRAR</a>
+        <br>
+        <hr>
+      </div>
+      {% empty %}
 
     {% endfor %}
+
+  </div>
   </div>
 </section>
 
