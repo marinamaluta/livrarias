@@ -69,100 +69,18 @@
             </div>
         </div>
         <div class="row text-center">
+
+            {% for tipo in tipos %}
             <div class="col-md-2 col-sm-2 ">
+                <a href="{% url 'tipo' tipo.id %}">
                 <span class="fa-stack fa-4x">
-                    <i class="fa fa-book" aria-hidden="true" class="img-circle img-responsive" alt="Resultado de imagem para combo1" title="Resultado de imagem para combo1"></i>
+                    <img src="{{ tipo.img_material_tipo }}" style='max-width:20px;'></img>
                 </span>
-                <h4 class="service-heading">Livros</h4>
+                <h4 class="service-heading">{{ tipo.tipo }}</h4></a>
                 <!--  <p class="text-muted"><a href="#" class="a-personalizado">Materiais pedagógicos para Comunidades</a></p> -->
             </div>
-
-            <div class="col-md-2 col-sm-2">
-                <span class="fa-stack fa-4x">
-                    <i class="fa fa-file-text" aria-hidden="true" class="img-circle img-responsive" alt="Resultado de imagem para combo2" title="Resultado de imagem para combo2"></i>
-                </span>
-                <h4 class="service-heading">Planos pedagógicos</h4>
-            </div>
-
-            <div class="col-md-2 col-sm-2">
-                <span class="fa-stack fa-4x">
-                    <i class="fa fa-video-camera" aria-hidden="true" class="img-circle img-responsive" alt="Resultado de imagem para combo3"
-                        title="Resultado de imagem para combo3"></i>
-                </span>
-                <h4 class="service-heading">Vídeos</h4>
-            </div>
-
-            <div class="col-md-2 col-sm-2">
-                <span class="fa-stack fa-4x">
-                    <i class="fa fa-mobile" aria-hidden="true" class="img-circle img-responsive" alt="Resultado de imagem para combo1" title="Resultado de imagem para combo1"></i>
-                </span>
-                <h4 class="service-heading">Aplicativo </h4>
-            </div>
-
-            <div class="col-md-2 col-sm-2">
-                <span class="fa-stack fa-4x">
-                    <i class="fa fa-graduation-cap" aria-hidden="true" class="img-circle img-responsive" alt="Resultado de imagem para combo1"
-                        title="Resultado de imagem para combo1"></i>
-                </span>
-                <h4 class="service-heading">Oficina de Formação </h4>
-            </div>
-
-            <div class="col-md-2 col-sm-2">
-                <span class="fa-stack fa-4x">
-                    <i class="fa fa-puzzle-piece" aria-hidden="true" class="img-circle img-responsive" alt="Resultado de imagem para combo1"
-                        title="Resultado de imagem para combo1"></i>
-                </span>
-                <h4 class="service-heading">Jogos Educativos </h4>
-                <!-- <input id="checkBox" type="checkbox"> -->
-            </div>
-
-            <div class="col-md-2 col-sm-2">
-                <span class="fa-stack fa-4x">
-                    <i class="far fa-video" aria-hidden="true" class="img-circle img-responsive" alt="Resultado de imagem para combo1" title="Resultado de imagem para combo1"></i>
-                </span>
-                <h4 class="service-heading">Vídeos-aulas </h4>
-                <!--  <p class="text-muted"><a href="#" class="a-personalizado">Materiais pedagógicos para Comunidades</a></p> -->
-            </div>
-
-            <div class="col-md-2 col-sm-2">
-                <span class="fa-stack fa-4x">
-                    <i class="fa fa-bullhorn" aria-hidden="true" class="img-circle img-responsive" alt="Resultado de imagem para combo2" title="Resultado de imagem para combo2"></i>
-                </span>
-                <h4 class="service-heading">Exposição</h4>
-            </div>
-
-            <div class="col-md-2 col-sm-2">
-                <span class="fa-stack fa-4x">
-                    <i class="fa fa-video-camera" aria-hidden="true" class="img-circle img-responsive" alt="Resultado de imagem para combo3"
-                        title="Resultado de imagem para combo3"></i>
-                </span>
-                <h4 class="service-heading"> Evento </h4>
-            </div>
-
-            <div class="col-md-2 col-sm-2">
-                <span class="fa-stack fa-4x">
-                    <i class="fa fa-trophy" aria-hidden="true" class="img-circle img-responsive" alt="Resultado de imagem para combo1" title="Resultado de imagem para combo1"></i>
-                </span>
-                <h4 class="service-heading"> Atividades </h4>
-            </div>
-
-            <div class="col-md-2 col-sm-2">
-                <span class="fa-stack fa-4x">
-                    <i class="fa fa-graduation-cap" aria-hidden="true" class="img-circle img-responsive" alt="Resultado de imagem para combo1"
-                        title="Resultado de imagem para combo1"></i>
-                </span>
-                <h4 class="service-heading"> Programas Educativos </h4>
-            </div>
-
-            <div class="col-md-2 col-sm-2">
-                <span class="fa-stack fa-4x">
-                    <i class="fa fa-puzzle-piece" aria-hidden="true" class="img-circle img-responsive" alt="Resultado de imagem para combo1"
-                        title="Resultado de imagem para combo1"></i>
-                </span>
-                <h4 class="service-heading">  xxxxx </h4>
-                <!-- <input id="checkBox" type="checkbox"> -->
-            </div>
-
+            {% empty %}
+            {% endfor %}
         </div>
     </div>
 

@@ -1,0 +1,28 @@
+{% extends 'conteudos/base.html' %} {% load static %} {% block content %} {% load conteudo_extras %}
+
+<section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">{{ tipo }}</h2>
+                    <h3 class="section-subheading text-muted" style="background-color:transparent"></h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section id="tipos">
+  <div class="container">
+    {% for i in items %}
+      <b>TITULO:  </b>{{i.titulo}}<br>
+      <b>TEMA: </b>{{i.tema}}<br>
+      <b>PREÇO: </b>{{i.preco}}<br>
+      <b>LINK: </b><a href="{{i.link_venda}}">{{i.link_venda}}</a><br>
+      <hr>
+    {% empty %}
+
+    {% endfor %}
+  </div>
+</section>
+
+{% endblock %}

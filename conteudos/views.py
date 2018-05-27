@@ -7,9 +7,16 @@ from conteudos.models import Material, TEMA, TIPO
 def index(request):
     _template = 'conteudos/home.html'
     temas = TEMA.objects.all()
-    _args = {'temas': temas, 'request': request}
+    tipos = TIPO.objects.all()
+    _args = {'temas': temas, 'tipos': tipos, 'request': request}
     return render(request, template_name=_template, context=_args)
 
+def tipo(request, x):
+    _template = 'conteudos/tipo.html'
+    _tipo = TIPO.objects.get(id=x)
+    _items = Material.objects.filter(tipo=_tipo)
+    _args = {'items': _items, 'tipo': _tipo}
+    return render(request, template_name=_template, context=_args)
 
 def estatisticas(request):
     _template = 'conteudos/estatisticas.html'
@@ -20,7 +27,6 @@ def estatisticas(request):
     cores = ['red', 'blue', 'green', 'purple']
     _args = {'valores': valores, 'cores': cores}
     return render(request, template_name=_template, context=_args)
-
 
 def tema(request, x):
     _template = 'conteudos/tema.html'
