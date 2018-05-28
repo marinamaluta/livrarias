@@ -29,7 +29,11 @@
                     <label class="text-muted">{{ tipo }}</label>
                 </div>
                 <div class="options">
-                    <a href="javascript:;" class="btn btn-primary btn-lg">Saiba mais </a>
+                    {% for l in t %}
+                        {% if l.tipo == tipo %}
+                            <a href="{% url 'tipo' l.id %}" class="btn btn-primary btn-lg">Saiba mais </a>
+                        {% endif %}
+                    {% endfor %}
                 </div>
                 </div>
             </div>
