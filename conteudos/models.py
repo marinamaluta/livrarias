@@ -100,7 +100,7 @@ class Material(models.Model):
     objetivos = models.ManyToManyField(OBJETIVOS, blank=True, verbose_name='Objetivos')
     link = models.URLField(blank=True, verbose_name='Link de acesso ao material')
     link_venda =  models.URLField(blank=True, verbose_name='Link de acesso material para venda')
-    imagem_capa = models.URLField(blank=True, verbose_name='URL da imagem de capa')
+    imagem_capa = models.URLField(max_length=600, blank=True, verbose_name='URL da imagem de capa')
 
 
     class Meta:
