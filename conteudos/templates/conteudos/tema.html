@@ -7,19 +7,41 @@
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading">{{ tema }}</h2>
                
-                
-                {% if site == 'youtube' %}
-                <embed src="https://www.youtube.com/embed/{{ vid }}" allowfullscreen="true" width="400px" height="300px"> {% else %}
-                <iframe src="https://player.vimeo.com/video/{{ vid }}?loop=1&autopause=0" width="500" height="281" frameborder="0" webkitallowfullscreen
-                    mozallowfullscreen allowfullscreen></iframe>
-                {% endif %}
+
+
                     <br>
                     <br>
                 
                 <h3 class="section-subheading text-muted" style="background-color:transparent">{{tema.subtema}}</h3>
                 <div class="intro-heading">
-                        <a href="#materiais" class="page-scroll btn btn-xl"> Assista o vídeo </a>
+                        <a href="#" data-toggle="modal" class="btn btn-xl" data-target="#verovideo">Assista o vídeo </a>
+                </div>
+
+
+
+                <!-- Inicio Modal -->
+                <div class="modal fade" id="verovideo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">{{ tema }}</h4>
+                      </div>
+                      <div class="modal-body" style="text-align:center;">
+                                 {% if site == 'youtube' %}
+                                 <embed src="https://www.youtube.com/embed/{{ vid }}" allowfullscreen="true" width="400px" height="300px"> {% else %}
+                                 <iframe src="https://player.vimeo.com/video/{{ vid }}?loop=1&autopause=0" width="500" height="281" frameborder="0" webkitallowfullscreen
+                                  mozallowfullscreen allowfullscreen></iframe>
+                                {% endif %}
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                      </div>
                     </div>
+                  </div>
+                </div>
+                <!-- Final Modal -->
+
 
             </div>
 
