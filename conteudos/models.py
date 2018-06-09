@@ -17,6 +17,7 @@ class ODS(models.Model):
 class TIPO(models.Model):
     tipo = models.CharField(max_length=50, verbose_name='Tipo')
     img_material_tipo = models.CharField(max_length=100, blank=True, default='', verbose_name='Img do material tipo')
+    descricao_tipo = models.CharField(max_length=1000, default='', blank=True, verbose_name='Descrição Tipo')
 
     def __str__(self):
         return str(self.tipo)
