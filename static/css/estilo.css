@@ -362,8 +362,13 @@ header .intro-text .intro-heading {
   padding-top: 30px;
   line-height: 50px;
   text-shadow: 2px 2px #004EA8;
-
 }
+
+.intro-heading{
+  padding-top: 200px;
+}
+
+
 @media (min-width: 768px) {
   header .intro-text {
     padding-top: 300px;
@@ -391,6 +396,7 @@ section h3.section-subheading {
   font-weight: 600;
   margin-bottom: 75px;
   line-height: 1.5;
+  color: white;
 
 }
 
@@ -423,6 +429,8 @@ section h3.section-subheading-contato{
   opacity: 1;
   color: white;
  height: 100vh;
+filter: saturate(70%) invert(10%) drop-shadow(20px -20px 10px #0000ff);
+ 
 }
 
 @media (min-width: 768px) {
