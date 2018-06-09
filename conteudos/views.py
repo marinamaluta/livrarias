@@ -56,5 +56,5 @@ def tema_tipo(request, x, tipo):
     tema = TEMA.objects.get(id=x)
     tipo = TIPO.objects.get(id=tipo)
     materiais = Material.objects.filter(tema=tema, tipo=tipo)
-    _args = {'tema': tema, 'materiais': materiais}
+    _args = {'tema': tema, 'materiais': materiais, "tipo": tipo}
     return render(request, template_name=_template, context=_args)
