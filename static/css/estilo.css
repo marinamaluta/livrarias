@@ -365,7 +365,7 @@ header .intro-text .intro-heading {
 }
 
 .intro-heading{
-  padding-top: 70px;
+  padding-top: 200px;
 }
 
 
@@ -386,7 +386,7 @@ header .intro-text .intro-heading {
 
 section h2.section-heading {
   font-size: 40px;
-  margin-top: 80px;
+  margin-top: 0;
   margin-bottom: 15px;
 }
 section h3.section-subheading {
@@ -402,7 +402,7 @@ section h3.section-subheading {
 
 section h3.section-subheading-contato{
   font-size: 20px;
-  font-family: 'Gotham';
+  font-family: "Lato",Arial,Helvetica,sans-serif, "Montserrat", "Helvetica Neue";
   text-transform: none;
   font-weight: 400;
   margin-bottom: 75px;
@@ -419,7 +419,19 @@ section h3.section-subheading-contato{
   padding: 0;
 }
 
-
+#services_container_imagem{
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  opacity: 1;
+  color: white;
+ height: 100vh;
+filter: saturate(70%) invert(10%) drop-shadow(20px -20px 10px #0000ff);
+ 
+}
 
 @media (min-width: 768px) {
   section {
@@ -802,19 +814,6 @@ display: flex;
 padding: 50px 0 50px 0;
 }
 
-#services_container_imagem{
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  opacity: 1;
-  color: white;
-  height: 100vh;
-  filter: saturate(70%) invert(10%);
- 
-}
 
 /* Final do modo responsivo */
 
