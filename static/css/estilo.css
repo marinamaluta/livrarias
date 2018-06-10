@@ -4,6 +4,8 @@
 body {
   overflow-x: hidden;
   font-family: 'Gotham';
+  height: 100%;
+  width: 100%;
 }
 
 @font-face {
@@ -17,8 +19,40 @@ body {
 .text-muted {
   color:dimgrey;
 }
+
+.section-subheading_text-muted3{
+  font-size: 12px;
+  font-family: 'Gotham';
+  text-transform: none;
+  font-weight: bolder;
+  line-height: 1.5;
+  color:#392779;
+  text-shadow: 1px 1px 1px white;
+}
+
 .text-primary {
   color: #fed136;
+}
+
+
+#services_container_imagem{
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  
+ height: 100vh;
+
+}
+
+section h2.section-heading {
+  font-size: 36px;
+  margin-top: 80px;
+  margin-bottom: 15px;
+ 
+ 
 }
 p {
   font-size: 14px;
@@ -154,7 +188,7 @@ fieldset[disabled] .btn-primary.active {
   border-radius: 20px;
   font-weight: bold;
   font-size: 18px;
-  padding: 10px 40px;
+  padding: 20px 40px;
   transition: 0.2s;
 }
 .btn-xl:hover,
@@ -254,6 +288,7 @@ fieldset[disabled] .btn-xl.active {
   color: write;
   background-color: #004EA8;
 }
+
 
 
 .foto-cardapio {
@@ -365,7 +400,7 @@ header .intro-text .intro-heading {
 }
 
 .intro-heading{
-  padding-top: 200px;
+  padding-top: 150px;
 }
 
 
@@ -386,17 +421,21 @@ header .intro-text .intro-heading {
 
 section h2.section-heading {
   font-size: 40px;
-  margin-top: 0;
-  margin-bottom: 15px;
+  margin-top: 80px;
+  margin-bottom: 30px;
 }
 section h3.section-subheading {
-  font-size: 18px;
+font-size: 18px;
   font-family: 'GothamMedium_1';
   text-transform: none;
-  font-weight: 600;
+  font-weight: 800;
   margin-bottom: 75px;
   line-height: 1.5;
+}
 
+.section-subheading_text-muted3{
+  font-size: 22px;
+ 
 }
 
 section h3.section-subheading-contato{
@@ -425,15 +464,16 @@ section h3.section-subheading-contato{
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  opacity: 1;
+  border-radius: 0%;
   color: white;
  height: 100vh;
- 
+
 }
+
 
 @media (min-width: 768px) {
   section {
-    padding: 70px;
+    padding: 0 0 40px 0 ;
   }
 }
 .service-heading {
@@ -749,6 +789,7 @@ section#contact .text-danger {
 footer {
 
   text-align: center;
+  padding: 20px;
 }
 footer span.copyright {
   line-height: 40px;
