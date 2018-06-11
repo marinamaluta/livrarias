@@ -55,10 +55,10 @@ section h2.section-heading {
  
 }
 p {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.75;
   color: dimgrey;
-  font-family: 'Gotham-Light';
+  font-family: 'Gotham';
 }
 
 .card-text{
@@ -426,9 +426,9 @@ section h2.section-heading {
 }
 section h3.section-subheading {
 font-size: 18px;
-  font-family: 'GothamMedium_1';
+  font-family: 'Gotham';
   text-transform: none;
-  font-weight: 800;
+  font-weight: 600;
   margin-bottom: 75px;
   line-height: 1.5;
 }
