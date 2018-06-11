@@ -26,8 +26,8 @@ body {
   text-transform: none;
   font-weight: bolder;
   line-height: 1.5;
-  color:#392779;
-  text-shadow: 1px 1px 1px white;
+  color:white;
+  text-shadow: 1px 1px 1px #392779;
 }
 
 .text-primary {
