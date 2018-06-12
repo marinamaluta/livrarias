@@ -70,7 +70,8 @@ class OBJETIVOS(models.Model):
 class TEMA(models.Model):
     tema = models.CharField(max_length=250, verbose_name='Tema')
     subtema = models.CharField(max_length=350, default='', blank=True, verbose_name='Subtema')
-    img_tema = models.CharField(max_length=25, default='', verbose_name='Nome da Img Tema')
+    img_tema_home = models.CharField(max_length=25, default='', verbose_name='Nome da Img Tema (home)')
+    img_tema_pag = models.CharField(max_length=25, default='', verbose_name='Nome da Img Tema (pág)')
     video_tema_id = models.CharField(max_length=100, blank=True, default='', verbose_name='Video do tema')
 
     def tipos_relacionados(self):
