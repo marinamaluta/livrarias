@@ -191,6 +191,7 @@ fieldset[disabled] .btn-primary.active {
   padding: 20px 40px;
   transition: 0.2s;
 }
+
 .btn-xl:hover,
 .btn-xl:focus,
 .btn-xl:active,
@@ -394,13 +395,13 @@ header .intro-text .intro-heading {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 22px;
-  padding-top: 30px;
+  margin-top: 30px;
   line-height: 50px;
   text-shadow: 2px 2px #004EA8;
 }
 
 .intro-heading{
-  padding-top: 150px;
+ margin-top: 70px;
 }
 
 
