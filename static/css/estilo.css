@@ -3,17 +3,26 @@
 
 body {
   overflow-x: hidden;
-  font-family: 'Gotham';
+  font-family: 'Gotham-Bold';
   height: 100%;
   width: 100%;
 }
 
 @font-face {
-  font-family: 'Gotham';
-  src: url('../fonts/Gotham-Black.otf'),
-        url('../fonts/Gotham-Light.otf'),
-        url('../fonts/Gotham-Bold.otf');
+  font-family: 'Gotham-Light';
+  src: url('../fonts/Gotham-Light.otf') format("opentype"), local('Gotham-Light');
+}
 
+@font-face {
+  font-family: 'Gotham-Bold';
+  font-weight: bold;
+  src: url('../fonts/Gotham-Bold.otf') format("opentype"), local('Gotham-Bold');
+}
+
+@font-face {
+  font-family: 'Gotham-Black';
+  src: url('../fonts/Gotham-Black.otf') format("opentype"), local('Gotham-Black');
+}
 
   font-weight: normal;
   font-style: normal;
@@ -60,7 +69,7 @@ p {
   font-size: 12px;
   line-height: 1.75;
   color: dimgrey;
-  font-family: 'Gotham';
+  font-family: 'Gotham-Bold';
 }
 
 .card-text{
@@ -98,7 +107,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Gotham';
+  font-family: 'Gotham-Bold';
   
 }
 
@@ -139,7 +148,7 @@ font-size: 18px;
   color: white;
   background-color: #004EA8;
   border-color: #004EA8;
-  font-family: 'Gotham';
+  font-family: 'Gotham-Bold';
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -184,7 +193,7 @@ fieldset[disabled] .btn-primary.active {
   color: white;
   border-color: white;
   background-color:  #004EA8;
-  font-family: 'Gotham';
+  font-family: 'Gotham-Bold';
   text-transform: uppercase;
   font-weight: 700;
   border-radius: 20px;
@@ -239,7 +248,7 @@ fieldset[disabled] .btn-xl.active {
 }
 .navbar-custom .navbar-brand {
   color: #004EA8;
-  font-family: 'Gotham';
+  font-family: 'Gotham-Bold';
 }
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .navbar-brand:focus,
@@ -253,7 +262,7 @@ fieldset[disabled] .btn-xl.active {
 .navbar-custom .navbar-toggle {
   background-color: #004EA8;
   border-color: #e7e7e7;
-  font-family: 'Gotham';
+  font-family: 'Gotham-Bold';
   text-transform: uppercase;
   color: white;
   font-size: 14px;
@@ -263,7 +272,7 @@ fieldset[disabled] .btn-xl.active {
   background-color: #004EA8;
 }
 .navbar-custom .nav li a{
-  font-family: 'Gotham';
+  font-family: 'Gotham-Bold';
   text-transform: uppercase;
   font-weight: 1000;
   letter-spacing: 1px;
@@ -384,7 +393,7 @@ header .intro-text {
   text-align: center;
 }
 header .intro-text .intro-lead-in{
-  font-family: 'Gotham';
+  font-family: 'Gotham-Bold';
   font-size: 48px;
   line-height: 50px;
   text-transform: uppercase;
@@ -393,7 +402,7 @@ header .intro-text .intro-lead-in{
  /* padding: 140px 0 0 0; */
 }
 header .intro-text .intro-heading {
-  font-family: 'Gotham';
+  font-family: 'Gotham-Bold';
   text-transform: uppercase;
   font-weight: bold;
   font-size: 22px;
@@ -413,7 +422,7 @@ header .intro-text .intro-heading {
     padding-bottom: 200px;
   }
   header .intro-text .intro-lead-in {
-    font-family: 'Gotham';
+    font-family: 'Gotham-Bold';
     font-size: 70px;
     font-weight: bold;
     text-align: center;
@@ -443,7 +452,7 @@ font-size: 18px;
 
 section h3.section-subheading-contato{
   font-size: 20px;
-  font-family: "Lato",Arial,Helvetica,sans-serif, "Montserrat", "Helvetica Neue";
+  font-family: 'Gotham-Light';
   text-transform: none;
   font-weight: 400;
   margin-bottom: 75px;
@@ -536,7 +545,7 @@ section h3.section-subheading-contato{
   font-size: 14px;
 }
 #portfolio .portfolio-item .portfolio-caption p {
-  font-family: 'Gotham';
+  font-family: 'Gotham-Bold';
   font-style: italic;
   font-size: 12px;
   margin: 0;
@@ -796,14 +805,14 @@ footer {
 }
 footer span.copyright {
   line-height: 40px;
-  font-family: 'Gotham'
+  font-family: 'Gotham-Bold'
   text-transform: uppercase;
   text-transform: none;
 }
 footer ul.quicklinks {
   margin-bottom: 0;
   line-height: 40px;
-  font-family: "Lato",Arial,Helvetica,sans-serif, "Montserrat", "Helvetica Neue";
+  font-family: 'Gotham-Light';
   text-transform: uppercase;
   text-transform: none;
 }
