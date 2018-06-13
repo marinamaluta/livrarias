@@ -11,7 +11,9 @@ body {
 @font-face {
   font-family: 'Gotham';
   src: url('../fonts/Gotham-Black.otf'),
+        url('../fonts/Gotham-Light.otf'),
         url('../fonts/Gotham-Bold.otf');
+
 
   font-weight: normal;
   font-style: normal;
@@ -22,7 +24,7 @@ body {
 
 .section-subheading_text-muted3{
   font-size: 12px;
-  font-family: 'Gotham';
+  font-family: 'Gotham-Light';
   text-transform: none;
   font-weight: bolder;
   line-height: 1.5;
@@ -427,7 +429,7 @@ section h2.section-heading {
 }
 section h3.section-subheading {
 font-size: 18px;
-  font-family: 'Gotham';
+  font-family: 'Gotham-Light';
   text-transform: none;
   font-weight: 600;
   margin-bottom: 75px;
@@ -435,7 +437,7 @@ font-size: 18px;
 }
 
 .section-subheading_text-muted3{
-  font-size: 22px;
+  font-size: 28px;
  
 }
 
